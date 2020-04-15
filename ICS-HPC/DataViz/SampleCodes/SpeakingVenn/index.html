@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SpeakingVenn</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./d3.min.js"></script>
+  </head>
+  <body background="imgs/arrival.jpg" onload="typeWriter()">
+    <Table>
+	<TR>  
+	<TD> <img src="./Venn_Pictures/120px-Venn_0000_0000.svg.png"> </img> </TD>
+	<TD> ICS-HPC: "Data Visualization Course" SpeakingVenn HW blue print. </br>
+	Idea: M. B. Ghaznavi-Ghoushchi, Implemented by: my class students. <BR>Please type your text in <b>English</b> and see it visually!</TD>
+	</Table>
+    <form name="myform" onSubmit="return handleClick()">
+      <input type="text" size="75" id="myVal" placeholder="Add some text&hellip;">
+      <input name="Submit"  type="submit" value="SHOW" >
+    </form>
+    <img src="" id="imgi" alt="" height="200" width="200">
+    <div id="texti"></div>
+    <script src="./venn.js"></script>
+	<BR>
+	<HR>
+	<cite><font size="3"> Link: <BR>https://ghoushchi.github.io/ICS-HPC/DataViz/SampleCodes/SpeakingVenn</font></cite> 
+	<BR> <cite><font size="3"> Usage Cndidates: </font></cite>
+	<BR><cite><font size="3"> <b>Robot to Robot Communications</b>, <b>Dynamic QR</b>, <b>Captcha for robots not humans!</b>, <b>Visual Communications</b>, and etc.</font></cite> 	
+	<BR> <cite><font size="3"> Resources: </font></cite>
+	<BR><cite><font size="3"> [1] https://commons.wikimedia.org/wiki/Category:3-ary_Boolean_functions;_white_and_red_Venn_diagrams</font></cite> 
+	<BR><cite><font size="3"> [2] Background image: Arrival 2016</font></cite> 
+	<script>
+var i = 0;
+var txt = 'Be aware Covid-19 beats! stay home';
+var speed = 100;
+
+function typeWriter() {
+  if (i < txt.length) {
+	document.getElementById("myVal").value += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>	
+  </body>
+</html>
