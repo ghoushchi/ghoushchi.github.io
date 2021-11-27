@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <title>Interactive ADC Performance Survey Visualization</title>
+
+
+    <!-- Load bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <!-- Following this: https://www.d3-graph-gallery.com/graph/boxplot_show_individual_points.html -->
+
+    <!-- Bootstrap grid setup -->
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h4>Interactive <em>ADC Performance Survey</em> Visualization</h4>
+        </div>
+      </div>
+<br>
+
+      <div class="row">
+
+        
+        <div class="col-8">
+          <div id="my_dataviz"></div>
+        </div>
+        <div class="col-4">
+
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGraph">Graph</label>
+            </div>
+            <select class="custom-select" id="inputGraph">
+              <option value="1" selected>Energy</option>
+              <option value="2">Aperture</option>
+              <option value="3">Walden FOM vs. Speed</option>
+              <option value="4">Schreier FOM vs. Speed</option>
+            </select>
+          </div>
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="inputType">Type</label>
+            </div>
+            <select class="custom-select" id="inputType">
+              <option value="1" selected>NQ & OS & NQ/OS</option>
+              <option value="2">NQ</option>
+              <option value="3">OS</option>
+              <option value="4">NQ/OS</option>
+            </select>
+          </div>
+
+          <form>
+            <div class="form-group">
+              <label for="yrange"><h5><strong>Data range</strong></h5></label>
+              
+              <!-- <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Search" disabled>
+                <div class="input-group-append">
+                  <button class="btn btn-success" type="submit">Go</button>  
+                 </div>
+              </div> -->
+
+              <input class="" type="text" name="years" value="1997 --> 1997" id="range-text" disabled>
+              <input type="range" class="form-check-inline" min="1997" max="2021" value="1997" id="yrange_start"><label for="volume">start</label>
+              <br>
+              <input type="range" class="form-check-inline" min="1997" max="2021" value="2021" id="yrange_end"><label for="volume">end</label>
+  
+            </div>
+          </form>
+
+          <div class="alert alert-success" role="alert" id="info">
+            <h6>
+              <b>TYPE:</b> <div id="info_TYPE"></div>
+              <b>ARCHITECTURE:</b> <div id="info_ARCHITECTURE"></div>
+              <b>TECHNOLOGY:</b> <div id="info_TECHNOLOGY"></div>
+              <b>AREA:</b> <div id="info_AREA"></div>
+              <b>TITLE:</b> <div id="info_TITLE"></div>
+              <b>AUTHORS:</b> <div id="info_AUTHORS"></div>
+              <b>ABSTRACT:</b> <div id="info_ABSTRACT"></div>
+            </h6>
+          </div>
+
+        </div>
+      </div>
+    
+        <div class="container">
+      <div class="row">
+        <div class="col">
+
+          <h5>Original Data Link: <a href="https://web.stanford.edu/~murmann/adcsurvey.html" target="_blank"> B. Murmann, "ADC Performance Survey 1997-2021," [Online]. Available: http://web.stanford.edu/~murmann/adcsurvey.html.</a>
+          </h5>
+          <h7>This page is designed by <a href="https://scholar.google.com/citations?user=xqYHfiIAAAAJ&hl=en" target="_blank">Reza Goldoust</a> in data visualization course of <a href="https://scholar.google.com/citations?user=np4oczEAAAAJ&hl=en" target="_blank">M. B. Ghaznavi-Ghoushchi</a> at Shahed university.
+          </h7>
+        </div>
+      </div>  
+      
+      </div>
+    </div>
+
+    <!-- External JS libraries -->
+    <script src="js/d3.v4.js"></script>
+    <script src="js/main.js"></script>
+    
+
+
+
+  </body>
+</html>
