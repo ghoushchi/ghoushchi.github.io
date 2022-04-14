@@ -1,0 +1,12 @@
+   An error occurred while sending the request.
+Username for 'https://github.com': ghoushchi@yahoo.com
+Password for 'https://ghoushchi@yahoo.com@github.com':
+remote: Support for password authentication was removed on August 13, 2021. Plea
+se use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requireme
+nts-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/ghoushchi/ghoushchi.github.
+io/'
+
+D:\web\Git\codes\ghoushchi.github.io>pause
+Press any key to continue . . .
