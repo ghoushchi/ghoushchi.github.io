@@ -9,7 +9,7 @@ Please normalized items to 0-100 before using.
 7 different examples are also included for demonstration
 
 <!-- blank line -->
-<figure class="video_container" width="500" height="300">
+<figure class="video_container" width="800" height="600">
   <video controls="true" allowfullscreen="false" poster="video/octagon.png" >
     <source src="video/output.mp4" type="video/mp4">
   </video>
