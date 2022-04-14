@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+<meta charset="UTF-8">
+<meta name="MBGG Radar Chart for Analog Designs Evaluation and Comparison" content="RadarChart">
+<title> MBGG Radar Chart for Analog Designs Evaluation and Comparison using Chart.js</title>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato'>
+<style>
+body {
+  height: 100%;
+}
+canvas {
+  max-height: 400px;
+}
+</style>
+</head>
+<body>
+  <canvas id="radarChart" width="800" height="400"></canvas>
+  <script src='js/Chart.v3.7.1.min.js'></script>
+<script>
+var radarCanvas = document.getElementById("radarChart");
+Chart.defaults.font.family = "Lato";
+Chart.defaults.font.size = 11;
+Chart.defaults.color = "black";
+var radarData = {
+  labels: ["Noise", "Linearity", "Gain", "Supply Voltage", "Voltage Swing", "Speed", "I/O Impedance", "Power", "Design Time"],
+  datasets: [
+       
+  {
+    label: "Design 1",
+    backgroundColor: "red",
+    borderColor: "red",
+    fill: false,
+    pointRadius: 6,
+    pointHitRadius: 12,
+    pointBorderWidth: 3,
+    pointBackgroundColor: "red",
+    pointBorderColor: "black",
+    pointHoverRadius: 10,
+    pointStyle: "triangle",
+    data: [65, 75, 70, 80, 60, 80, 60, 70, 49],
+  },
+      
+  {
+    label: "Design 2",
+    backgroundColor: "blue",
+    borderColor: "blue",
+    fill: false,
+    pointRadius: 6,
+    pointHitRadius: 12,
+    pointBorderWidth: 3,
+    pointBackgroundColor: "blue",
+    pointBorderColor: "black",
+    pointHoverRadius: 10,
+    pointStyle: "rect",
+    data: [54, 65, 60, 70, 70, 75, 75, 70, 60],
+  },
+      
+  {
+    label: "Design 3",
+    backgroundColor: "green",
+    borderColor: "green",
+    fill: false,
+    pointRadius: 6,
+    pointHitRadius: 12,
+    pointBorderWidth: 3,
+    pointBackgroundColor: "green",
+    pointBorderColor: "black",
+    pointHoverRadius: 10,
+    pointStyle: "circle",
+    data: [84, 56, 75, 40, 90, 85, 54, 65, 90],
+  },
+      
+  {
+    label: "Design 4",
+    backgroundColor: "cyan",
+    borderColor: "cyan",
+    fill: false,
+    pointRadius: 6,
+    pointHitRadius: 12,
+    pointBorderWidth: 3,
+    pointBackgroundColor: "cyan",
+    pointBorderColor: "black",
+    pointHoverRadius: 10,
+    pointStyle: "star",
+    data: [64, 36, 55, 20, 70, 65, 34, 45, 70],
+  },
+   	
+]
+}   
+var chartOptions = {
+  plugins: {
+    title: {
+      display: true,
+      text: "Razavi's Analog Exa-gons (Analog Octagon)++",
+      position: "bottom" },
+    legend: {
+      position: "bottom",
+      labels: {
+        padding: 10 } } },
+
+  scales: {
+    r: {
+      max: 100,
+      min: 0,
+      ticks: {
+        stepSize: 15,
+        backdropColor: "orange",
+        color: "white" },
+      grid: {
+        color: "black" },
+      angleLines: {
+        color: "gray" },
+      pointLabels: {
+        font: {
+          size: 12 } } } } };
+
+var radarChart = new Chart(radarCanvas, {
+  type: 'radar',
+  data: radarData,
+  options: chartOptions });
+
+</script>
+</body>
+</html>
