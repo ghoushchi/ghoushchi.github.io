@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<!-- Load d3.js -->
+<script src="js/d3.v4.js"></script>
+
+<!-- Create a div where the graph will take place -->
+<div id="my_dataviz"></div>
+<script>
+    // set the dimensions and margins of the graph
+    var margin = {
+            top: 10,
+            right: 20,
+            bottom: 50,
+            left: 30
+        },
+        width = 600 - margin.left - margin.right,
+        height = 400 - margin.top - margin.bottom;
+
+    // append the svg object to the body of the page
+    var svg = d3.select("#my_dataviz")
+        .append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform",
+            "translate(" + margin.left + "," + margin.top + ")");
+
+
+    var svgmap = d3.select("#my_dataviz")
+        .append("svg")
+        .attr("width", width + margin.left + margin.right + 100)
+        .attr("height", height + margin.top + margin.bottom)
+        .attr("background-color", "blue");
+
+    var clipRect = svgmap.append('svg:defs')
+        .append('svg:clipPath')
+        .attr('id', 'shutter-clip')
+        .append('rect')
+        .attr({
+            x: 400,
+            y: 200,
+            height: 400,
+            width: 400
+        });
+
+    var ww = 600;
+    var hh = 500 * 3 / 4;
+
+
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210321.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210321.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210321.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210321.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210321.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210321.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210324.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210324.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210324.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210324.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210324.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210324.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210327.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210327.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210327.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210327.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210327.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210327.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210330.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210330.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210330.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210330.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210330.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210330.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210331.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210331.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210331.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210331.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210331.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210331.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210402.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210402.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210402.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210402.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210402.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210402.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210403.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210403.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210403.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210403.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210403.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210403.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210405.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210405.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210405.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210405.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210405.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210405.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210407.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210407.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210407.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210407.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210407.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210407.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210412.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210412.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210412.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210412.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210412.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210412.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210419.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210419.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210419.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210419.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210419.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210419.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210426.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210426.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210426.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210426.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210426.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210426.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210503.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210503.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210503.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210503.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210503.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210503.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210508.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210508.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210508.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210508.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210508.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210508.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210515.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210515.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210515.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210515.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210515.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210515.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210522.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210522.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210522.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210522.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210522.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210522.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210528.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210528.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210528.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210528.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210528.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210528.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210603.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210603.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210603.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210603.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210603.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210603.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210617.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210617.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210617.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210617.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210617.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210617.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210626.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210626.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210626.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210626.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210626.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210626.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210629.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210629.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210629.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210629.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210629.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210629.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210702.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210702.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210702.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210702.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210702.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210702.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210706.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210706.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210706.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210706.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210706.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210706.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210709.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210709.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210709.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210709.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210709.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210709.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210714.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210714.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210714.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210714.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210714.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210714.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210721.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210721.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210721.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210721.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210721.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210721.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210729.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210729.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210729.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210729.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210729.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210729.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210806.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210806.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210806.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210806.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210806.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210806.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210814.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210814.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210814.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210814.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210814.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210814.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210827.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210827.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210827.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210827.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210827.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210827.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210904.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210904.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210904.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210904.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210904.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210904.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210910.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210910.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210910.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210910.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210910.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210910.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210917.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210917.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210917.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210917.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210917.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210917.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210923.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210923.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210923.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210923.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210923.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210923.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210930.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210930.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210930.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210930.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210930.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20210930.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211008.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211008.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211008.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211008.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211008.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211008.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211016.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211016.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211016.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211016.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211016.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211016.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211023.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211023.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211023.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211023.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211023.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211023.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211026.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211026.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211026.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211026.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211026.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211026.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211030.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211030.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211030.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211030.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211030.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211030.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211103.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211103.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211103.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211103.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211103.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211103.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211106.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211106.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211106.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211106.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211106.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211106.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211113.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211113.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211113.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211113.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211113.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211113.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211120.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211120.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211120.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211120.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211120.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211120.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211127.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211127.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211127.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211127.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211127.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211127.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211204.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211204.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211204.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211204.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211204.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211204.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211211.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211211.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211211.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211211.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211211.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211211.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211218.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211218.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211218.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211218.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211218.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20211218.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220102.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220102.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220102.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220102.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220102.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220102.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220108.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220108.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220108.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220108.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220108.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220108.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220115.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220115.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220115.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220115.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220115.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220115.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220124.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220124.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220124.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220124.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220124.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220124.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220126.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220126.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220126.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220126.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220126.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220126.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220128.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220128.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220128.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220128.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220128.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220128.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220131.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220131.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220131.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220131.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220131.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220131.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220202.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220202.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220202.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220202.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220202.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220202.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220203.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220203.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220203.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220203.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220203.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220203.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220211.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220211.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220211.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220211.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220211.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220211.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220218.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220218.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220218.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220218.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220218.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220218.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220225.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220225.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220225.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220225.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220225.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220225.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220311.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220311.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220311.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220311.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220311.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220311.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220318.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220318.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220318.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220318.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220318.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220318.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220325.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220325.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220325.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220325.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220325.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220325.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220401.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220401.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220401.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220401.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220401.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220401.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220408.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220408.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220408.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220408.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220408.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220408.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220415.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220415.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220415.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220415.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220415.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220415.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220422.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220422.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220422.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220422.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220422.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220422.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220429.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220429.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220429.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220429.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220429.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220429.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220506.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220506.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220506.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220506.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220506.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220506.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220513.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220513.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220513.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220513.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220513.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220513.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220520.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220520.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220520.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220520.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220520.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220520.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220527.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220527.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220527.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220527.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220527.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220527.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220603.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220603.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220603.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220603.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220603.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220603.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220617.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220617.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220617.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220617.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220617.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220617.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220624.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220624.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220624.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220624.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220624.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220624.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220701.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220701.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220701.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220701.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220701.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220701.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220708.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220708.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220708.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220708.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220708.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220708.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220715.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220715.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220715.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220715.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220715.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220715.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220722.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220722.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220722.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220722.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220722.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220722.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220729.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220729.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220729.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220729.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220729.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220729.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220805.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220805.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220805.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220805.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220805.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220805.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220812.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220812.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220812.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220812.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220812.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220812.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220819.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220819.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220819.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220819.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220819.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220819.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220826.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220826.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220826.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220826.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220826.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220826.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220902.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220902.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220902.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220902.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220902.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220902.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220909.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220909.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220909.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220909.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220909.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220909.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220916.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220916.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220916.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220916.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220916.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220916.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220923.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220923.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220923.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220923.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220923.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220923.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220930.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220930.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220930.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220930.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220930.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20220930.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20221007.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20221007.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20221007.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20221007.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20221007.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20221007.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20221014.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20221014.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20221014.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20221014.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20221014.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20221014.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20221021.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20221021.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20221021.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20221021.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20221021.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20221021.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20221028.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20221028.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20221028.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20221028.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20221028.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20221028.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20221104.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20221104.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20221104.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20221104.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20221104.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20221104.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20221111.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20221111.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20221111.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20221111.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20221111.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20221111.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20221118.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20221118.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20221118.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20221118.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20221118.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+    svgmap.append("svg:image").attr("xlink:href", "maps/20221118.jpg").attr("width", ww).attr("height", hh).attr("opacity", 0);
+
+
+
+    svgmap.append("svg:image").attr("xlink:href", "maps/21-Mar-21.jpg")
+        .attr("width", "300")
+        .attr("height", "300")
+        .attr("opacity", 0)
+        .attr("title", "24-Mar-21");
+
+    svgmap.append("svg:image").attr("xlink:href", "maps/24-Mar-21.jpg")
+        .attr("width", "300")
+        .attr("height", "300")
+        .attr("opacity", 0)
+        .attr("title", "24-Mar-21");
+
+
+    // Parse the Data
+    d3.csv("assets/DailyDeaths.csv", function(data) {
+
+        // X axis
+        var x = d3.scaleBand()
+            .range([0, width])
+            .domain(data.map(function(d) {
+                return d.date;
+            }))
+            .padding(0.1);
+
+        var xAxis = d3.axisBottom(x)
+            .tickValues(x.domain().filter(function(d, i) {
+                return !(i % 20)
+            }));
+
+        svg.append("g")
+            .attr("transform", "translate(0," + height + ")")
+            .call(xAxis)
+            .selectAll("text")
+            .attr("transform", "translate(0,0)rotate(-45)")
+            .style("text-anchor", "end");
+
+        svg.append('text')
+        .attr('class', 'title')
+        .attr('x', width / 2)
+        .attr('y', margin.top/2)
+        .attr('text-anchor', 'middle')
+        .text('Covid-19 and effect of vaccination on peaks decline');
+
+        // Add Y axis
+        var y = d3.scaleLinear()
+            .domain([0, 800])
+            .range([height, 0]);
+        svg.append("g")
+            .call(d3.axisLeft(y));
+
+        // Bars
+        svg.selectAll("mybar")
+            .data(data)
+            .enter()
+            .append("rect")
+            .attr("x", function(d) {
+                return x(d.date);
+            })
+            .attr("width", x.bandwidth())
+            .attr("fill", "#69b3a2")
+            // no bar at the beginning thus:
+            .attr("height", function(d) {
+                return height - y(0);
+            }) // always equal to 0
+            .attr("y", function(d) {
+                return y(0);
+            });
+
+        var del = 100;
+        // BAR Animation
+        svg.selectAll("rect")
+            .transition()
+            .duration(1000)
+            .attr("y", function(d) {
+                return y(d.DailyDeaths);
+            })
+            .attr("height", function(d) {
+                return height - y(d.DailyDeaths);
+            })
+            .delay(function(d, i) {
+                console.log(i);
+                return (i * del)
+            });
+
+        // MAP Animation
+        svgmap.selectAll("image")
+            .transition()
+            .duration(1000)
+            .attr("opacity", 1)
+            .delay(function(d, i) {
+                console.log(i);
+                return (i * del)
+            });
+
+
+    })
+</script>
