@@ -1,4 +1,4 @@
-## Fast Human Face recognition and Face meshing in video considering aspects of Data Visualization.
+## Fast Human Face recognition and Face meshing in video considering aspects of Data Visualization
 
 Mohammad-Iman Hossein-Nia & M. B. Ghaznavi-Ghoushchi
 
