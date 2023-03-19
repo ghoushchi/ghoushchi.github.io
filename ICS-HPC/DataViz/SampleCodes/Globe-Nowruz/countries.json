@@ -1,0 +1,317 @@
+{
+  "AF": {
+    "name": "Afghanistan",
+    "native": "افغانستان",
+    "phone": "93",
+    "continent": "AS",
+    "capital": "Kabul",
+    "currency": "AFN",
+    "languages": [
+      "ps",
+      "uz",
+      "tk"
+    ]
+  },
+  "AL": {
+    "name": "Albania",
+    "native": "Shqipëria",
+    "phone": "355",
+    "continent": "EU",
+    "capital": "Tirana",
+    "currency": "ALL",
+    "languages": [
+      "sq"
+    ]
+  },
+  "AM": {
+    "name": "Armenia",
+    "native": "Հայաստան",
+    "phone": "374",
+    "continent": "AS",
+    "capital": "Yerevan",
+    "currency": "AMD",
+    "languages": [
+      "hy",
+      "ru"
+    ]
+  },
+  "AZ": {
+    "name": "Azerbaijan",
+    "native": "Azərbaycan",
+    "phone": "994",
+    "continent": "AS",
+    "capital": "Baku",
+    "currency": "AZN",
+    "languages": [
+      "az"
+    ]
+  },
+  "BD": {
+    "name": "Bangladesh",
+    "native": "Bangladesh",
+    "phone": "880",
+    "continent": "AS",
+    "capital": "Dhaka",
+    "currency": "BDT",
+    "languages": [
+      "bn"
+    ]
+  },
+  "CA": {
+    "name": "Canada",
+    "native": "Canada",
+    "phone": "1",
+    "continent": "NA",
+    "capital": "Ottawa",
+    "currency": "CAD",
+    "languages": [
+      "en",
+      "fr"
+    ]
+  },
+  "CN": {
+    "name": "China",
+    "native": "中国",
+    "phone": "86",
+    "continent": "AS",
+    "capital": "Beijing",
+    "currency": "CNY",
+    "languages": [
+      "zh"
+    ]
+  },
+  "CY": {
+    "name": "Cyprus",
+    "native": "Κύπρος",
+    "phone": "357",
+    "continent": "EU",
+    "capital": "Nicosia",
+    "currency": "EUR",
+    "languages": [
+      "el",
+      "tr",
+      "hy"
+    ]
+  },
+  "GE": {
+    "name": "Georgia",
+    "native": "საქართველო",
+    "phone": "995",
+    "continent": "AS",
+    "capital": "Tbilisi",
+    "currency": "GEL",
+    "languages": [
+      "ka"
+    ]
+  },
+  "IL": {
+    "name": "Israel",
+    "native": "יִשְׂרָאֵל",
+    "phone": "972",
+    "continent": "AS",
+    "capital": "Jerusalem",
+    "currency": "ILS",
+    "languages": [
+      "he",
+      "ar"
+    ]
+  },
+  "IN": {
+    "name": "India",
+    "native": "भारत",
+    "phone": "91",
+    "continent": "AS",
+    "capital": "New Delhi",
+    "currency": "INR",
+    "languages": [
+      "hi",
+      "en"
+    ]
+  },
+  "IQ": {
+    "name": "Iraq",
+    "native": "العراق",
+    "phone": "964",
+    "continent": "AS",
+    "capital": "Baghdad",
+    "currency": "IQD",
+    "languages": [
+      "ar",
+      "ku"
+    ]
+  },
+  "IR": {
+    "name": "Iran",
+    "native": "ایران",
+    "phone": "98",
+    "continent": "AS",
+    "capital": "Tehran",
+    "currency": "IRR",
+    "languages": [
+      "fa"
+    ]
+  },
+  "KG": {
+    "name": "Kyrgyzstan",
+    "native": "Кыргызстан",
+    "phone": "996",
+    "continent": "AS",
+    "capital": "Bishkek",
+    "currency": "KGS",
+    "languages": [
+      "ky",
+      "ru"
+    ]
+  },
+  "KZ": {
+    "name": "Kazakhstan",
+    "native": "Қазақстан",
+    "phone": "76,77",
+    "continent": "AS",
+    "capital": "Astana",
+    "currency": "KZT",
+    "languages": [
+      "kk",
+      "ru"
+    ]
+  },
+  "MD": {
+    "name": "Moldova",
+    "native": "Moldova",
+    "phone": "373",
+    "continent": "EU",
+    "capital": "Chișinău",
+    "currency": "MDL",
+    "languages": [
+      "ro"
+    ]
+  },
+  "MN": {
+    "name": "Mongolia",
+    "native": "Монгол улс",
+    "phone": "976",
+    "continent": "AS",
+    "capital": "Ulan Bator",
+    "currency": "MNT",
+    "languages": [
+      "mn"
+    ]
+  },
+  "MV": {
+    "name": "Maldives",
+    "native": "Maldives",
+    "phone": "960",
+    "continent": "AS",
+    "capital": "Malé",
+    "currency": "MVR",
+    "languages": [
+      "dv"
+    ]
+  },
+  "PK": {
+    "name": "Pakistan",
+    "native": "Pakistan",
+    "phone": "92",
+    "continent": "AS",
+    "capital": "Islamabad",
+    "currency": "PKR",
+    "languages": [
+      "en",
+      "ur"
+    ]
+  },
+  "RU": {
+    "name": "Russia",
+    "native": "Россия",
+    "phone": "7",
+    "continent": "EU",
+    "capital": "Moscow",
+    "currency": "RUB",
+    "languages": [
+      "ru"
+    ]
+  },
+  "SY": {
+    "name": "Syria",
+    "native": "سوريا",
+    "phone": "963",
+    "continent": "AS",
+    "capital": "Damascus",
+    "currency": "SYP",
+    "languages": [
+      "ar"
+    ]
+  },
+  "TJ": {
+    "name": "Tajikistan",
+    "native": "Тоҷикистон",
+    "phone": "992",
+    "continent": "AS",
+    "capital": "Dushanbe",
+    "currency": "TJS",
+    "languages": [
+      "tg",
+      "ru"
+    ]
+  },
+  "TM": {
+    "name": "Turkmenistan",
+    "native": "Türkmenistan",
+    "phone": "993",
+    "continent": "AS",
+    "capital": "Ashgabat",
+    "currency": "TMT",
+    "languages": [
+      "tk",
+      "ru"
+    ]
+  },
+  "TR": {
+    "name": "Turkey",
+    "native": "Türkiye",
+    "phone": "90",
+    "continent": "AS",
+    "capital": "Ankara",
+    "currency": "TRY",
+    "languages": [
+      "tr"
+    ]
+  },
+  "UA": {
+    "name": "Ukraine",
+    "native": "Україна",
+    "phone": "380",
+    "continent": "EU",
+    "capital": "Kyiv",
+    "currency": "UAH",
+    "languages": [
+      "uk"
+    ]
+  },
+  "US": {
+    "name": "United States",
+    "native": "United States",
+    "phone": "1",
+    "continent": "NA",
+    "capital": "Washington D.C.",
+    "currency": "USD,USN,USS",
+    "languages": [
+      "en"
+    ]
+  },
+  "UZ": {
+    "name": "Uzbekistan",
+    "native": "O‘zbekiston",
+    "phone": "998",
+    "continent": "AS",
+    "capital": "Tashkent",
+    "currency": "UZS",
+    "languages": [
+      "uz",
+      "ru"
+    ]
+  },
+
+
+  }
+}
