@@ -12,7 +12,7 @@
  * <https://www.gnu.org/licenses/>. 
  * History:  
  * Original code: (C) 1999-2023 Aaron C. Shumate
- * Migrated the original Java class files into platform-independent browsers via chreepj: (C) 2023 M. B. Ghaznavi-Ghoushchi
+ * Migrated the original Java class files into platform-independent browsers via CheerpJ: (C) 2023 M. B. Ghaznavi-Ghoushchi
  * 
  */
 
