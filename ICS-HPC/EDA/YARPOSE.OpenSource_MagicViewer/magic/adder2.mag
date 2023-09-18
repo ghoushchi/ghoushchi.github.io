@@ -1,0 +1,17 @@
+magic
+tech scmos
+timestamp 951209823
+<< polycontact >>
+rect 60 95 64 99
+rect 69 75 73 79
+rect 60 45 64 49
+rect 69 23 73 27
+use fulladd fulladd_1
+timestamp 951209823
+transform 1 0 -42 0 -1 97
+box 40 -27 209 37
+use fulladd fulladd_0
+timestamp 951209823
+transform 1 0 -42 0 1 27
+box 40 -27 209 37
+<< end >>

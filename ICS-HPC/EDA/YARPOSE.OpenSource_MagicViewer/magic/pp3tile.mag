@@ -1,0 +1,34 @@
+magic
+tech scmos
+timestamp 951985653
+<< metal1 >>
+rect 268 73 272 107
+rect 268 17 272 51
+<< metal2 >>
+rect 267 119 278 124
+rect 272 108 278 111
+rect 0 69 41 73
+rect 120 69 268 73
+rect 267 59 278 65
+rect 0 51 41 55
+rect 120 51 268 55
+rect 272 13 279 16
+rect 267 0 278 5
+<< m2contact >>
+rect 268 107 272 111
+rect 268 69 272 73
+rect 268 51 272 55
+rect 268 13 272 17
+use latchmuxand latchmuxand_1
+timestamp 951985653
+transform -1 0 178 0 -1 208
+box -90 84 181 148
+use latchmuxand latchmuxand_0
+timestamp 951985653
+transform -1 0 178 0 1 -84
+box -90 84 181 148
+use adder2 adder2_0
+timestamp 951209823
+transform -1 0 444 0 1 0
+box -2 0 167 124
+<< end >>

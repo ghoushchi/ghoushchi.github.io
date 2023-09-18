@@ -1,0 +1,64 @@
+magic
+tech scmos
+timestamp 951290120
+<< polysilicon >>
+rect -9 16 0 18
+rect -16 -16 0 -14
+rect -23 -48 -1 -46
+rect -30 -80 -1 -78
+rect -37 -112 -1 -110
+rect -44 -144 -1 -142
+rect -51 -176 0 -174
+rect -58 -208 -1 -206
+<< metal1 >>
+rect -6 32 -2 36
+rect 26 32 30 36
+rect 39 -192 43 8
+<< metal2 >>
+rect 33 4 37 8
+<< polycontact >>
+rect -13 16 -9 20
+rect -20 -16 -16 -12
+rect -27 -48 -23 -44
+rect -34 -80 -30 -76
+rect -41 -112 -37 -108
+rect -48 -144 -44 -140
+rect -55 -176 -51 -172
+rect -62 -208 -58 -204
+use 8to1muxcell 8to1muxcell_0
+timestamp 951288779
+transform 1 0 5 0 1 7
+box -70 -7 38 29
+use 8to1muxcell 8to1muxcell_1
+timestamp 951288779
+transform 1 0 5 0 -1 -3
+box -70 -7 38 29
+use 8to1muxcell 8to1muxcell_2
+timestamp 951288779
+transform 1 0 5 0 1 -57
+box -70 -7 38 29
+use 8to1muxcell 8to1muxcell_3
+timestamp 951288779
+transform 1 0 5 0 -1 -67
+box -70 -7 38 29
+use 8to1muxcell 8to1muxcell_4
+timestamp 951288779
+transform 1 0 5 0 1 -121
+box -70 -7 38 29
+use 8to1muxcell 8to1muxcell_5
+timestamp 951288779
+transform 1 0 5 0 -1 -131
+box -70 -7 38 29
+use 8to1muxcell 8to1muxcell_6
+timestamp 951288779
+transform 1 0 5 0 1 -185
+box -70 -7 38 29
+use 8to1muxcell 8to1muxcell_7
+timestamp 951288779
+transform 1 0 5 0 -1 -195
+box -70 -7 38 29
+<< labels >>
+rlabel metal1 -4 34 -4 34 5 Gnd
+rlabel metal1 28 34 28 34 5 Vdd
+rlabel metal1 41 6 41 6 7 output
+<< end >>

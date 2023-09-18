@@ -1,0 +1,176 @@
+magic
+tech scmos
+timestamp 951985653
+<< metal1 >>
+rect 34 -4 73 0
+rect 85 -4 150 0
+rect 154 -4 193 0
+rect 283 -4 330 0
+rect 334 -4 407 0
+rect 445 -4 510 0
+rect 514 -4 539 0
+rect 43 -11 90 -7
+rect 94 -11 167 -7
+rect 205 -11 270 -7
+rect 274 -11 313 -7
+rect 325 -11 390 -7
+rect 394 -11 433 -7
+rect 163 -18 210 -14
+rect 214 -18 287 -14
+rect 403 -18 450 -14
+rect 454 -18 527 -14
+rect 77 -25 519 -21
+rect 535 -28 539 -4
+rect 51 -32 539 -28
+<< metal2 >>
+rect 0 82 5 90
+rect 38 87 42 90
+rect 59 77 65 90
+rect 82 87 86 90
+rect 119 80 125 90
+rect 158 87 162 90
+rect 179 78 185 90
+rect 202 87 206 90
+rect 239 82 245 90
+rect 278 87 282 90
+rect 299 82 305 90
+rect 322 87 326 90
+rect 359 80 365 90
+rect 398 87 402 90
+rect 419 81 425 90
+rect 442 87 446 90
+rect 479 82 485 90
+rect 518 87 522 90
+rect 539 81 544 90
+rect 0 -36 5 1
+rect 30 0 34 2
+rect 39 -7 43 2
+rect 47 -28 51 2
+rect 47 -36 51 -32
+rect 59 -36 65 1
+rect 73 0 77 2
+rect 81 0 85 2
+rect 73 -21 77 -4
+rect 90 -7 94 2
+rect 73 -36 77 -25
+rect 119 -36 125 1
+rect 150 0 154 2
+rect 159 -14 163 2
+rect 167 -7 171 2
+rect 167 -36 171 -11
+rect 179 -36 185 2
+rect 193 0 197 2
+rect 193 -36 197 -4
+rect 201 -7 205 2
+rect 210 -14 214 7
+rect 239 -36 245 2
+rect 270 -7 274 2
+rect 279 0 283 2
+rect 287 -14 291 2
+rect 287 -36 291 -18
+rect 299 -36 305 2
+rect 313 -7 317 2
+rect 321 -7 325 2
+rect 330 0 334 2
+rect 313 -36 317 -11
+rect 359 -36 365 1
+rect 390 -7 394 2
+rect 399 -14 403 2
+rect 407 0 411 2
+rect 407 -36 411 -4
+rect 419 -36 425 2
+rect 433 -7 437 2
+rect 441 0 445 2
+rect 433 -36 437 -11
+rect 450 -14 454 2
+rect 479 -36 485 1
+rect 510 0 514 2
+rect 519 -21 523 2
+rect 527 -14 531 2
+rect 527 -36 531 -18
+rect 539 -36 544 1
+<< m2contact >>
+rect 30 -4 34 0
+rect 73 -4 77 0
+rect 81 -4 85 0
+rect 150 -4 154 0
+rect 193 -4 197 0
+rect 279 -4 283 0
+rect 330 -4 334 0
+rect 407 -4 411 0
+rect 441 -4 445 0
+rect 510 -4 514 0
+rect 39 -11 43 -7
+rect 90 -11 94 -7
+rect 167 -11 171 -7
+rect 201 -11 205 -7
+rect 270 -11 274 -7
+rect 313 -11 317 -7
+rect 321 -11 325 -7
+rect 390 -11 394 -7
+rect 433 -11 437 -7
+rect 159 -18 163 -14
+rect 210 -18 214 -14
+rect 287 -18 291 -14
+rect 399 -18 403 -14
+rect 450 -18 454 -14
+rect 527 -18 531 -14
+rect 73 -25 77 -21
+rect 519 -25 523 -21
+rect 47 -32 51 -28
+use 3to1mux 3to1mux_0
+timestamp 951209823
+transform 0 -1 64 1 0 16
+box -16 0 74 64
+use 3to1mux 3to1mux_1
+timestamp 951209823
+transform 0 1 60 1 0 16
+box -16 0 74 64
+use 3to1mux 3to1mux_2
+timestamp 951209823
+transform 0 -1 184 1 0 16
+box -16 0 74 64
+use 3to1mux 3to1mux_3
+timestamp 951209823
+transform 0 1 180 1 0 16
+box -16 0 74 64
+use 3to1mux 3to1mux_4
+timestamp 951209823
+transform 0 -1 304 1 0 16
+box -16 0 74 64
+use 3to1mux 3to1mux_5
+timestamp 951209823
+transform 0 1 300 1 0 16
+box -16 0 74 64
+use 3to1mux 3to1mux_6
+timestamp 951209823
+transform 0 -1 424 1 0 16
+box -16 0 74 64
+use 3to1mux 3to1mux_7
+timestamp 951209823
+transform 0 1 420 1 0 16
+box -16 0 74 64
+use 3to1mux 3to1mux_8
+timestamp 951209823
+transform 0 -1 544 1 0 16
+box -16 0 74 64
+<< labels >>
+rlabel metal2 49 -34 49 -34 7 wordCounterOut_s1[0]
+rlabel metal2 75 -34 75 -34 5 wordCounterOut_s1[1]
+rlabel metal2 169 -34 169 -34 5 wordCounterOut_s1[2]
+rlabel metal2 195 -34 195 -34 5 wordCounterOut_s1[3]
+rlabel metal2 289 -34 289 -34 5 wordCounterOut_s1[4]
+rlabel metal2 315 -34 315 -34 5 wordCounterOut_s1[5]
+rlabel metal2 409 -34 409 -34 6 wordCounterOut_s1[6]
+rlabel metal2 435 -35 435 -35 4 wordCounterOut_s1[7]
+rlabel metal2 529 -35 529 -35 6 wordCounterOut_s1[8]
+rlabel metal2 40 89 40 89 1 wrapshifterOut_s1[0]
+rlabel metal2 84 89 84 89 1 wrapshifterOut_s1[1]
+rlabel metal2 160 89 160 89 1 wrapshifterOut_s1[2]
+rlabel metal2 204 89 204 89 1 wrapshifterOut_s1[3]
+rlabel metal2 280 89 280 89 1 wrapshifterOut_s1[4]
+rlabel metal2 324 89 324 89 1 wrapshifterOut_s1[5]
+rlabel metal2 400 89 400 89 1 wrapshifterOut_s1[6]
+rlabel metal2 444 89 444 89 1 wrapshifterOut_s1[7]
+rlabel metal2 520 89 520 89 1 wrapshifterOut_s1[8]
+<< end >>

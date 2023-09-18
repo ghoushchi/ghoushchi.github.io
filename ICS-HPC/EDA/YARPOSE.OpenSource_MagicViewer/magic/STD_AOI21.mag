@@ -1,0 +1,112 @@
+magic
+tech scmos
+timestamp 951727448
+<< pwell >>
+rect 0 0 48 32
+<< nwell >>
+rect 0 32 48 64
+<< polysilicon >>
+rect 11 53 13 55
+rect 35 53 37 55
+rect 19 49 21 51
+rect 27 49 29 51
+rect 19 40 21 41
+rect 27 40 29 41
+rect 19 38 29 40
+rect 11 22 13 37
+rect 15 22 17 24
+rect 23 22 25 38
+rect 27 35 29 38
+rect 27 31 28 35
+rect 11 8 13 10
+rect 15 6 17 10
+rect 23 8 25 10
+rect 35 6 37 37
+rect 15 4 37 6
+<< ndiffusion >>
+rect 10 10 11 22
+rect 13 10 15 22
+rect 17 21 23 22
+rect 17 13 18 21
+rect 22 13 23 21
+rect 17 10 23 13
+rect 25 10 26 22
+<< pdiffusion >>
+rect 10 37 11 53
+rect 13 37 14 53
+rect 30 51 35 53
+rect 18 41 19 49
+rect 21 47 27 49
+rect 21 43 22 47
+rect 26 43 27 47
+rect 21 41 27 43
+rect 29 41 30 49
+rect 34 39 35 51
+rect 30 37 35 39
+rect 37 51 42 53
+rect 37 39 38 51
+rect 37 37 42 39
+<< metal1 >>
+rect 0 56 22 60
+rect 26 56 48 60
+rect 6 53 10 56
+rect 18 51 34 53
+rect 18 50 30 51
+rect 21 43 22 46
+rect 21 30 24 43
+rect 30 38 34 39
+rect 38 51 42 56
+rect 38 38 42 39
+rect 32 31 33 34
+rect 7 29 10 30
+rect 18 26 24 30
+rect 30 30 33 31
+rect 38 28 41 29
+rect 19 21 22 26
+rect 6 8 10 10
+rect 26 8 34 10
+rect 0 4 38 8
+rect 42 4 48 8
+<< ntransistor >>
+rect 11 10 13 22
+rect 15 10 17 22
+rect 23 10 25 22
+<< ptransistor >>
+rect 11 37 13 53
+rect 19 41 21 49
+rect 27 41 29 49
+rect 35 37 37 53
+<< polycontact >>
+rect 7 25 11 29
+rect 28 31 32 35
+rect 37 29 41 33
+<< ndcontact >>
+rect 6 10 10 22
+rect 18 13 22 21
+rect 26 10 30 22
+<< pdcontact >>
+rect 6 37 10 53
+rect 14 37 18 53
+rect 22 43 26 47
+rect 30 39 34 51
+rect 38 39 42 51
+<< m2contact >>
+rect 6 30 10 34
+rect 14 26 18 30
+rect 30 26 34 30
+rect 38 24 42 28
+<< psubstratepcontact >>
+rect 30 10 34 22
+rect 38 4 42 8
+<< nsubstratencontact >>
+rect 22 56 26 60
+<< labels >>
+rlabel m2contact 40 26 40 26 6 In1
+rlabel m2contact 8 32 8 32 6 In2
+rlabel metal1 4 6 4 6 6 GND
+rlabel metal1 4 58 4 58 6 Vdd
+rlabel metal1 44 58 44 58 6 Vdd
+rlabel metal1 44 6 44 6 6 GND
+rlabel m2contact 16 28 16 28 6 Out_b
+rlabel m2contact 32 28 32 28 6 In0
+<< end >>

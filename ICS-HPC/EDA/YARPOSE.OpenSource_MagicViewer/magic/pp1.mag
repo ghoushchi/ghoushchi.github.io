@@ -1,0 +1,32 @@
+magic
+tech scmos
+timestamp 951985653
+<< metal1 >>
+rect 256 473 260 492
+<< metal2 >>
+rect 260 493 276 496
+<< polycontact >>
+rect 343 503 347 507
+<< m2contact >>
+rect 256 492 260 496
+use fulladd fulladd_0
+timestamp 951209823
+transform 1 0 232 0 1 507
+box 40 -27 209 37
+use pp1tile pp1tile_3
+timestamp 951985653
+transform 1 0 1 0 1 360
+box -1 0 440 124
+use pp1tile pp1tile_2
+timestamp 951985653
+transform 1 0 1 0 1 240
+box -1 0 440 124
+use pp1tile pp1tile_1
+timestamp 951985653
+transform 1 0 1 0 1 120
+box -1 0 440 124
+use pp1tile pp1tile_0
+timestamp 951985653
+transform 1 0 1 0 1 0
+box -1 0 440 124
+<< end >>

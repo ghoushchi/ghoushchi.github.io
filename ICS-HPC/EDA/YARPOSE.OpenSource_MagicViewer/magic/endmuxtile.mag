@@ -1,0 +1,22 @@
+magic
+tech scmos
+timestamp 951985653
+<< metal1 >>
+rect 32 86 36 88
+rect 32 82 37 86
+rect 33 77 37 82
+rect 33 42 37 48
+rect 32 38 37 42
+rect 32 35 36 38
+<< metal2 >>
+rect 3 107 7 124
+rect 3 3 7 16
+use 3to1mux 3to1mux_1
+timestamp 951209823
+transform 1 0 16 0 -1 124
+box -16 0 74 64
+use 3to1mux 3to1mux_0
+timestamp 951209823
+transform 1 0 16 0 1 0
+box -16 0 74 64
+<< end >>

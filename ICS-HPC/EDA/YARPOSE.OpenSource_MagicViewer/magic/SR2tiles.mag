@@ -1,0 +1,16 @@
+magic
+tech scmos
+timestamp 951985653
+<< metal1 >>
+rect 48 64 51 68
+rect 48 60 58 64
+rect 54 57 58 60
+use SRtile SRtile_1
+timestamp 951985653
+transform 1 0 -9 0 -1 124
+box 9 0 198 64
+use SRtile SRtile_0
+timestamp 951985653
+transform 1 0 -9 0 1 0
+box 9 0 198 64
+<< end >>

@@ -1,0 +1,40 @@
+magic
+tech scmos
+timestamp 951572636
+use worddriver worddriver_0
+timestamp 951572636
+transform -1 0 52 0 -1 105
+box -6 -2 42 106
+use worddriver worddriver_1
+timestamp 951572636
+transform 1 0 60 0 -1 105
+box -6 -2 42 106
+use worddriver worddriver_2
+timestamp 951572636
+transform -1 0 140 0 -1 105
+box -6 -2 42 106
+use worddriver worddriver_3
+timestamp 951572636
+transform 1 0 148 0 -1 105
+box -6 -2 42 106
+use worddriver worddriver_4
+timestamp 951572636
+transform -1 0 228 0 -1 105
+box -6 -2 42 106
+use worddriver worddriver_5
+timestamp 951572636
+transform 1 0 236 0 -1 105
+box -6 -2 42 106
+use worddriver worddriver_6
+timestamp 951572636
+transform -1 0 316 0 -1 105
+box -6 -2 42 106
+use worddriver worddriver_7
+timestamp 951572636
+transform 1 0 324 0 -1 105
+box -6 -2 42 106
+use worddriver worddriver_8
+timestamp 951572636
+transform -1 0 404 0 -1 105
+box -6 -2 42 106
+<< end >>

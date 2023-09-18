@@ -1,0 +1,20 @@
+magic
+tech scmos
+timestamp 951255912
+use sram sram_0
+timestamp 951244380
+transform 0 1 0 -1 0 35
+box -2 -2 36 51
+use sram sram_2
+timestamp 951244380
+transform 0 -1 88 -1 0 35
+box -2 -2 36 51
+use sram sram_1
+timestamp 951244380
+transform 0 1 0 -1 0 3
+box -2 -2 36 51
+use sram sram_3
+timestamp 951244380
+transform 0 -1 88 -1 0 3
+box -2 -2 36 51
+<< end >>

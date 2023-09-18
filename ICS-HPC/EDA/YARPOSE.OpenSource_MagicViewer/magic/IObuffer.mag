@@ -1,0 +1,101 @@
+magic
+tech scmos
+timestamp 951456915
+<< nwell >>
+rect -73 -12 -42 20
+<< polysilicon >>
+rect -58 13 -48 15
+rect -58 12 -56 13
+rect -50 12 -48 13
+rect -66 2 -64 4
+rect -66 -25 -64 -8
+rect -58 -10 -56 -8
+rect -58 -25 -56 -23
+rect -50 -25 -48 -8
+rect -66 -32 -64 -30
+rect -58 -36 -56 -35
+rect -50 -36 -48 -35
+rect -58 -38 -48 -36
+<< ndiffusion >>
+rect -67 -30 -66 -25
+rect -64 -30 -63 -25
+rect -59 -35 -58 -25
+rect -56 -35 -55 -25
+rect -51 -35 -50 -25
+rect -48 -35 -47 -25
+<< pdiffusion >>
+rect -67 -8 -66 2
+rect -64 -8 -63 2
+rect -59 -8 -58 12
+rect -56 -8 -55 12
+rect -51 -8 -50 12
+rect -48 -8 -47 12
+<< metal1 >>
+rect -59 16 -58 20
+rect -48 16 -47 20
+rect -63 12 -59 16
+rect -47 12 -43 16
+rect -71 -9 -67 -8
+rect -71 -25 -67 -13
+rect -60 -17 -59 -13
+rect -63 -18 -59 -17
+rect -55 -20 -51 -8
+rect -47 -16 -43 -15
+rect -44 -20 -43 -16
+rect -55 -25 -51 -24
+rect -63 -40 -59 -35
+rect -71 -44 -63 -40
+rect -47 -40 -43 -35
+<< metal2 >>
+rect -73 16 -63 20
+rect -59 16 -47 20
+rect -43 16 -42 20
+rect -73 15 -42 16
+rect -67 -11 -43 -9
+rect -67 -13 -47 -11
+rect -75 -22 -63 -18
+rect -51 -24 -42 -20
+rect -73 -40 -42 -39
+rect -73 -44 -63 -40
+rect -59 -44 -47 -40
+rect -43 -44 -42 -40
+<< ntransistor >>
+rect -66 -30 -64 -25
+rect -58 -35 -56 -25
+rect -50 -35 -48 -25
+<< ptransistor >>
+rect -66 -8 -64 2
+rect -58 -8 -56 12
+rect -50 -8 -48 12
+<< polycontact >>
+rect -64 -17 -60 -13
+rect -48 -20 -44 -16
+<< ndcontact >>
+rect -71 -30 -67 -25
+rect -63 -35 -59 -25
+rect -55 -35 -51 -25
+rect -47 -35 -43 -25
+<< pdcontact >>
+rect -71 -8 -67 2
+rect -63 -8 -59 12
+rect -55 -8 -51 12
+rect -47 -8 -43 12
+<< m2contact >>
+rect -63 16 -59 20
+rect -47 16 -43 20
+rect -71 -13 -67 -9
+rect -63 -22 -59 -18
+rect -47 -15 -43 -11
+rect -55 -24 -51 -20
+rect -63 -44 -59 -40
+rect -47 -44 -43 -40
+<< psubstratepcontact >>
+rect -71 -40 -67 -34
+<< nsubstratencontact >>
+rect -58 16 -48 20
+<< labels >>
+rlabel metal2 -55 -42 -55 -42 2 Gnd
+rlabel metal2 -69 18 -69 18 8 Vdd
+rlabel metal2 -72 -20 -72 -20 7 input
+rlabel metal2 -43 -22 -43 -22 3 output
+<< end >>

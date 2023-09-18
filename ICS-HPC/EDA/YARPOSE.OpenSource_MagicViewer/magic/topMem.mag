@@ -1,0 +1,353 @@
+magic
+tech scmos
+timestamp 951985653
+<< nwell >>
+rect 29 4 43 51
+rect 70 5 83 38
+<< metal1 >>
+rect 154 891 157 934
+rect 130 888 157 891
+rect 130 884 133 888
+rect 197 883 200 934
+rect 218 883 221 934
+rect 285 884 288 935
+rect 306 883 309 934
+rect 373 883 376 934
+rect 394 884 397 935
+rect -58 873 -56 877
+rect -52 873 22 877
+rect 461 867 464 935
+rect 482 867 485 935
+rect 575 876 579 908
+rect -58 841 -48 845
+rect -44 841 26 845
+rect 582 844 586 908
+rect -59 809 -40 813
+rect -36 809 26 813
+rect 589 812 593 908
+rect -60 777 -32 781
+rect -28 777 26 781
+rect 596 780 600 908
+rect -60 745 -24 749
+rect -20 745 24 749
+rect 603 748 607 908
+rect -60 713 -16 717
+rect -12 713 23 717
+rect 610 716 614 908
+rect -61 681 -8 685
+rect -4 681 25 685
+rect 617 684 621 908
+rect -62 649 16 653
+rect 20 649 26 653
+rect 624 652 628 908
+rect 723 895 727 896
+rect 768 895 772 909
+rect 804 896 808 917
+rect 811 895 815 925
+rect 723 888 728 895
+rect 732 864 736 877
+rect 739 872 743 876
+rect 739 828 743 868
+rect 739 744 743 824
+rect -52 617 22 621
+rect 739 608 743 740
+rect 746 862 750 876
+rect 746 811 750 858
+rect 746 734 750 807
+rect -44 585 22 589
+rect -36 553 22 557
+rect -28 521 22 525
+rect -20 489 22 493
+rect -12 457 22 461
+rect -4 425 22 429
+rect 20 393 22 397
+rect -52 361 22 365
+rect 746 352 750 730
+rect -44 329 22 333
+rect -36 297 22 301
+rect -28 265 23 269
+rect -20 233 22 237
+rect -12 201 23 205
+rect -4 169 22 173
+rect 20 137 23 141
+rect -49 102 1 108
+rect -49 94 36 99
+rect 85 70 89 99
+rect 577 88 581 120
+rect 638 116 642 120
+rect 615 88 619 112
+rect 645 88 649 120
+rect 652 88 656 120
+rect 659 88 663 120
+rect 666 88 670 120
+rect 673 88 677 120
+rect 680 88 684 120
+rect 687 98 697 120
+rect 723 112 728 121
+rect -49 5 2 11
+rect -61 -4 -49 0
+rect -69 -11 29 -7
+rect -77 -18 37 -14
+<< metal2 >>
+rect -77 925 811 929
+rect -81 -14 -77 925
+rect -69 917 804 921
+rect -73 -7 -69 917
+rect -61 909 768 913
+rect -65 0 -61 909
+rect 515 896 723 901
+rect 727 896 751 901
+rect 514 887 738 892
+rect 514 885 687 887
+rect 691 885 738 887
+rect -56 621 -52 873
+rect 565 872 575 876
+rect 579 872 631 876
+rect 743 868 752 871
+rect 740 867 752 868
+rect 858 866 864 870
+rect 750 858 752 862
+rect 837 859 841 863
+rect 732 850 753 854
+rect -56 365 -52 617
+rect -48 589 -44 841
+rect 565 840 582 844
+rect 586 840 630 844
+rect 728 836 751 842
+rect 691 830 735 836
+rect 743 824 753 828
+rect 736 816 752 820
+rect 838 815 841 819
+rect -48 333 -44 585
+rect -40 557 -36 809
+rect 565 808 589 812
+rect 593 808 630 812
+rect 750 807 752 811
+rect 858 808 864 812
+rect -40 301 -36 553
+rect -32 525 -28 777
+rect 565 776 596 780
+rect 600 776 629 780
+rect 723 777 751 782
+rect 728 776 751 777
+rect -32 269 -28 521
+rect 736 748 753 752
+rect -24 493 -20 745
+rect 565 744 603 748
+rect 607 744 629 748
+rect 750 747 753 748
+rect 857 746 864 750
+rect 743 742 745 744
+rect 743 740 753 742
+rect 740 738 753 740
+rect 837 739 841 743
+rect 750 730 752 734
+rect -24 237 -20 489
+rect -16 461 -12 713
+rect 565 712 610 716
+rect 614 712 629 716
+rect 751 708 756 722
+rect 691 703 756 708
+rect -16 205 -12 457
+rect -8 429 -4 681
+rect 565 680 617 684
+rect 621 680 630 684
+rect -8 173 -4 425
+rect 16 397 20 649
+rect 565 648 624 652
+rect 573 616 628 620
+rect 736 604 739 608
+rect 573 584 629 588
+rect 573 552 629 556
+rect 573 520 629 524
+rect 572 488 628 492
+rect 573 456 629 460
+rect 573 424 629 428
+rect 16 141 20 393
+rect 572 392 628 396
+rect 573 360 629 364
+rect 735 348 746 352
+rect 573 328 629 332
+rect 573 296 629 300
+rect 573 264 629 268
+rect 573 232 629 236
+rect 573 200 629 204
+rect 573 168 629 172
+rect 572 136 628 140
+rect 581 120 631 124
+rect 619 112 638 116
+rect 0 91 4 108
+rect -14 87 4 91
+rect -14 63 -10 87
+rect 8 82 12 108
+rect 16 87 20 108
+rect 561 102 723 108
+rect 728 102 739 108
+rect 561 91 687 98
+rect 16 83 76 87
+rect -6 78 12 82
+rect -6 63 -2 78
+rect 72 63 76 83
+rect -57 55 -22 56
+rect 6 55 64 56
+rect -57 52 64 55
+rect -57 -28 -53 52
+rect -26 50 10 52
+rect 101 43 105 85
+rect -49 0 -45 7
+rect 29 -7 33 6
+rect 37 -14 41 6
+rect 85 0 89 43
+<< m2contact >>
+rect -81 925 -77 929
+rect -73 917 -69 921
+rect -65 909 -61 913
+rect -56 873 -52 877
+rect 811 925 815 929
+rect 804 917 808 921
+rect 768 909 772 913
+rect 575 872 579 876
+rect -48 841 -44 845
+rect 582 840 586 844
+rect -40 809 -36 813
+rect 589 808 593 812
+rect -32 777 -28 781
+rect 596 776 600 780
+rect -24 745 -20 749
+rect 603 744 607 748
+rect -16 713 -12 717
+rect 610 712 614 716
+rect -8 681 -4 685
+rect 617 680 621 684
+rect 16 649 20 653
+rect 723 896 727 901
+rect 687 880 691 887
+rect 739 868 743 872
+rect 687 830 691 836
+rect 739 824 743 828
+rect 732 816 736 820
+rect 723 771 728 777
+rect 732 748 736 752
+rect 739 740 743 744
+rect 687 703 691 708
+rect 624 648 628 652
+rect -56 617 -52 621
+rect 739 604 743 608
+rect 746 858 750 862
+rect 746 807 750 811
+rect 746 730 750 734
+rect -48 585 -44 589
+rect -40 553 -36 557
+rect -32 521 -28 525
+rect -24 489 -20 493
+rect -16 457 -12 461
+rect -8 425 -4 429
+rect 16 393 20 397
+rect -56 361 -52 365
+rect 746 348 750 352
+rect -48 329 -44 333
+rect -40 297 -36 301
+rect -32 265 -28 269
+rect -24 233 -20 237
+rect -16 201 -12 205
+rect -8 169 -4 173
+rect 16 137 20 141
+rect 577 120 581 124
+rect 631 120 635 124
+rect 615 112 619 116
+rect 638 112 642 116
+rect 723 102 728 112
+rect 687 91 697 98
+rect -65 -4 -61 0
+rect -49 -4 -45 0
+rect -73 -11 -69 -7
+rect 29 -11 33 -7
+rect -81 -18 -77 -14
+rect 37 -18 41 -14
+use 3to1mux 3to1mux_0
+timestamp 951209823
+transform 1 0 766 0 1 837
+box -16 0 74 64
+use 1020inverter 1020inverter_0
+timestamp 951305891
+transform 1 0 858 0 -1 889
+box -20 -12 2 53
+use 3to1mux 3to1mux_1
+timestamp 951209823
+transform 1 0 766 0 -1 841
+box -16 0 74 64
+use 1020inverter 1020inverter_1
+timestamp 951305891
+transform 1 0 858 0 1 789
+box -20 -12 2 53
+use 3to1mux 3to1mux_2
+timestamp 951209823
+transform 1 0 766 0 1 717
+box -16 0 74 64
+use 1020inverter 1020inverter_2
+timestamp 951305891
+transform 1 0 858 0 -1 769
+box -20 -12 2 53
+use 8to1mux 8to1mux_0
+timestamp 951290120
+transform 1 0 693 0 1 856
+box -65 -224 43 36
+use 8to1mux 8to1mux_1
+timestamp 951290120
+transform 1 0 693 0 1 600
+box -65 -224 43 36
+use 8to1mux 8to1mux_2
+timestamp 951290120
+transform 1 0 693 0 1 344
+box -65 -224 43 36
+use memand2 memand2_2
+timestamp 951310223
+transform 1 0 -48 0 -1 101
+box -1 3 42 99
+use memand2 memand2_1
+timestamp 951310223
+transform -1 0 32 0 -1 101
+box -1 3 42 99
+use memand2 memand2_0
+timestamp 951310223
+transform 1 0 38 0 -1 101
+box -1 3 42 99
+use 2040inverter 2040inverter_0
+timestamp 951308881
+transform 1 0 92 0 1 16
+box -10 -10 14 54
+use fullmem fullmem_0
+timestamp 951572955
+transform 1 0 24 0 1 112
+box -24 -121 549 793
+<< labels >>
+rlabel metal1 748 874 748 874 1 row2in
+rlabel metal1 741 873 741 873 1 row1in
+rlabel metal1 734 873 734 873 1 row0in
+rlabel metal2 862 810 862 810 7 pixel_bit1_v1
+rlabel metal2 862 868 862 868 7 pixel_bit0_v1
+rlabel metal2 862 748 862 748 7 pixel_bit2_v1
+rlabel metal2 87 3 87 3 1 Phi2
+rlabel metal2 -47 3 -47 3 1 Mem_Pointer_s1[0]
+rlabel metal2 30 3 30 3 1 Mem_Pointer_s1[1]
+rlabel metal1 -46 105 -46 105 1 Vdd
+rlabel metal1 -46 96 -46 96 1 Gnd
+rlabel metal1 -37 875 -37 875 1 Pixel_s1[7]
+rlabel metal1 -28 843 -28 843 1 Pixel_s1[6]
+rlabel metal1 -24 811 -24 811 1 Pixel_s1[5]
+rlabel metal1 -18 779 -18 779 1 Pixel_s1[4]
+rlabel metal1 -12 747 -12 747 1 Pixel_s1[3]
+rlabel metal1 -7 715 -7 715 1 Pixel_s1[2]
+rlabel metal1 -2 683 -2 683 1 Pixel_s1[1]
+rlabel metal1 6 651 6 651 1 Pixel_s1[0]
+rlabel metal2 -55 -24 -55 -24 1 Write_Mem_q1
+rlabel metal2 38 3 38 3 1 Mem_Pointer_s1[2]
+rlabel metal1 647 90 647 90 5 Pix_Mux_s1[2]
+rlabel metal1 654 90 654 90 1 Pix_Mux_s1[3]
+rlabel metal1 661 90 661 90 5 Pix_Mux_s1[4]
+rlabel metal1 668 90 668 90 1 Pix_Mux_s1[5]
+rlabel metal1 675 90 675 90 5 Pix_Mux_s1[6]
+rlabel metal1 682 90 682 90 1 Pix_Mux_s1[7]
+rlabel metal1 579 90 579 90 5 Pix_Mux_s1[0]
+rlabel metal1 617 90 617 90 1 Pix_Mux_s1[1]
+<< end >>

@@ -1,0 +1,67 @@
+magic
+tech scmos
+timestamp 951985653
+<< metal1 >>
+rect 54 424 58 428
+rect 48 420 58 424
+rect 48 415 51 420
+rect 54 364 58 368
+rect 48 360 58 364
+rect 48 352 51 360
+rect 54 304 58 308
+rect 48 300 58 304
+rect 48 294 51 300
+rect 54 244 58 248
+rect 48 240 58 244
+rect 48 235 51 240
+rect 54 184 58 188
+rect 48 180 58 184
+rect 48 172 51 180
+rect 54 124 58 128
+rect 48 120 58 124
+rect 48 112 51 120
+rect 54 64 58 68
+rect 48 60 58 64
+rect 48 55 51 60
+<< metal2 >>
+rect 16 437 20 453
+rect 16 391 20 407
+rect 16 317 20 333
+rect 16 271 20 287
+rect 16 197 20 213
+rect 16 151 20 167
+rect 16 77 20 93
+rect 16 31 20 47
+use SRtile SRtile_7
+timestamp 951985653
+transform 1 0 -9 0 -1 484
+box 9 0 198 64
+use SRtile SRtile_6
+timestamp 951985653
+transform 1 0 -9 0 1 360
+box 9 0 198 64
+use SRtile SRtile_5
+timestamp 951985653
+transform 1 0 -9 0 -1 364
+box 9 0 198 64
+use SRtile SRtile_4
+timestamp 951985653
+transform 1 0 -9 0 1 240
+box 9 0 198 64
+use SRtile SRtile_3
+timestamp 951985653
+transform 1 0 -9 0 -1 244
+box 9 0 198 64
+use SRtile SRtile_2
+timestamp 951985653
+transform 1 0 -9 0 1 120
+box 9 0 198 64
+use SRtile SRtile_1
+timestamp 951985653
+transform 1 0 -9 0 -1 124
+box 9 0 198 64
+use SRtile SRtile_0
+timestamp 951985653
+transform 1 0 -9 0 1 0
+box 9 0 198 64
+<< end >>

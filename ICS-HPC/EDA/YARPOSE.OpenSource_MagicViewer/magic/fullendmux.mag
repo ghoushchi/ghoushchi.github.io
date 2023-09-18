@@ -1,0 +1,20 @@
+magic
+tech scmos
+timestamp 951985653
+use endmuxtile endmuxtile_3
+timestamp 951985653
+transform 1 0 0 0 1 360
+box 0 0 90 124
+use endmuxtile endmuxtile_2
+timestamp 951985653
+transform 1 0 0 0 1 240
+box 0 0 90 124
+use endmuxtile endmuxtile_1
+timestamp 951985653
+transform 1 0 0 0 1 120
+box 0 0 90 124
+use endmuxtile endmuxtile_0
+timestamp 951985653
+transform 1 0 0 0 1 0
+box 0 0 90 124
+<< end >>

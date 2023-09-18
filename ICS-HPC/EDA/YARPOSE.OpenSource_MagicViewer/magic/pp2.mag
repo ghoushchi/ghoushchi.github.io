@@ -1,0 +1,24 @@
+magic
+tech scmos
+timestamp 951985653
+use adder2 adder2_0
+timestamp 951209823
+transform -1 0 444 0 1 480
+box -2 0 167 124
+use pp2tile pp2tile_3
+timestamp 951985653
+transform 1 0 0 0 1 360
+box -3 0 446 124
+use pp2tile pp2tile_2
+timestamp 951985653
+transform 1 0 0 0 1 240
+box -3 0 446 124
+use pp2tile pp2tile_1
+timestamp 951985653
+transform 1 0 0 0 1 120
+box -3 0 446 124
+use pp2tile pp2tile_0
+timestamp 951985653
+transform 1 0 0 0 1 0
+box -3 0 446 124
+<< end >>

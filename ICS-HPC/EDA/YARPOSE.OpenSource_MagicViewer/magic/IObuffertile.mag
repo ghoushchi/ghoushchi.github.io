@@ -1,0 +1,36 @@
+magic
+tech scmos
+timestamp 951457029
+use IObuffer IObuffer_7
+timestamp 951456915
+transform 1 0 110 0 -1 466
+box -75 -44 -42 20
+use IObuffer IObuffer_6
+timestamp 951456915
+transform 1 0 110 0 1 430
+box -75 -44 -42 20
+use IObuffer IObuffer_5
+timestamp 951456915
+transform 1 0 110 0 -1 346
+box -75 -44 -42 20
+use IObuffer IObuffer_4
+timestamp 951456915
+transform 1 0 110 0 1 310
+box -75 -44 -42 20
+use IObuffer IObuffer_3
+timestamp 951456915
+transform 1 0 110 0 -1 226
+box -75 -44 -42 20
+use IObuffer IObuffer_2
+timestamp 951456915
+transform 1 0 110 0 1 190
+box -75 -44 -42 20
+use IObuffer IObuffer_1
+timestamp 951456915
+transform 1 0 110 0 -1 106
+box -75 -44 -42 20
+use IObuffer IObuffer_0
+timestamp 951456915
+transform 1 0 110 0 1 70
+box -75 -44 -42 20
+<< end >>

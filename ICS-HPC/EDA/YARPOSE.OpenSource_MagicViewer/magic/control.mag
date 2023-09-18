@@ -1,0 +1,8 @@
+magic
+tech scmos
+timestamp 951727448
+use controller controller_0
+timestamp 951727448
+transform 1 0 0 0 1 0
+box -2 -2 906 266
+<< end >>

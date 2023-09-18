@@ -1,0 +1,109 @@
+magic
+tech scmos
+timestamp 951088720
+<< nwell >>
+rect -1 32 50 64
+<< polysilicon >>
+rect 6 56 30 58
+rect 40 56 42 58
+rect 13 45 22 47
+rect 28 46 30 56
+rect 32 46 34 48
+rect 20 41 22 45
+rect 20 28 22 36
+rect 28 34 30 36
+rect 20 26 30 28
+rect 6 14 22 16
+rect 20 13 22 14
+rect 28 13 30 26
+rect 32 25 34 36
+rect 40 33 42 36
+rect 41 29 42 33
+rect 32 21 33 25
+rect 32 13 34 21
+rect 40 18 42 29
+rect 20 6 22 8
+rect 28 6 30 8
+rect 32 6 34 8
+rect 40 6 42 8
+<< ndiffusion >>
+rect 19 8 20 13
+rect 22 8 23 13
+rect 27 8 28 13
+rect 30 8 32 13
+rect 34 8 35 13
+rect 39 8 40 18
+rect 42 8 43 18
+<< pdiffusion >>
+rect 19 36 20 41
+rect 22 36 23 41
+rect 27 36 28 46
+rect 30 36 32 46
+rect 34 36 35 46
+rect 39 36 40 56
+rect 42 36 43 56
+<< metal1 >>
+rect 2 58 5 64
+rect 2 16 5 54
+rect 9 48 12 64
+rect 39 60 40 64
+rect 35 56 39 60
+rect 2 0 5 12
+rect 9 0 12 44
+rect 15 13 19 36
+rect 23 33 27 36
+rect 23 29 37 33
+rect 23 13 27 29
+rect 44 25 47 36
+rect 37 21 47 25
+rect 43 18 47 21
+rect 35 4 39 8
+rect 39 0 40 4
+<< metal2 >>
+rect -1 60 40 64
+rect 44 60 50 64
+rect -1 59 50 60
+rect -1 4 50 5
+rect -1 0 40 4
+rect 44 0 50 4
+<< ntransistor >>
+rect 20 8 22 13
+rect 28 8 30 13
+rect 32 8 34 13
+rect 40 8 42 18
+<< ptransistor >>
+rect 20 36 22 41
+rect 28 36 30 46
+rect 32 36 34 46
+rect 40 36 42 56
+<< polycontact >>
+rect 2 54 6 58
+rect 9 44 13 48
+rect 2 12 6 16
+rect 37 29 41 33
+rect 33 21 37 25
+<< ndcontact >>
+rect 15 8 19 13
+rect 23 8 27 13
+rect 35 8 39 18
+rect 43 8 47 18
+<< pdcontact >>
+rect 15 36 19 41
+rect 23 36 27 46
+rect 35 36 39 56
+rect 43 36 47 56
+<< m2contact >>
+rect 40 60 44 64
+rect 40 0 44 4
+<< psubstratepcontact >>
+rect 35 0 39 4
+<< nsubstratencontact >>
+rect 35 60 39 64
+<< labels >>
+rlabel metal2 34 2 34 2 1 Gnd
+rlabel metal1 11 21 11 21 1 Phi_b
+rlabel metal1 3 22 3 22 1 Phi
+rlabel metal2 31 61 31 61 1 Vdd
+rlabel metal1 17 22 17 22 1 In
+rlabel metal1 46 30 46 30 1 Out_b
+<< end >>

@@ -1,0 +1,53 @@
+magic
+tech scmos
+timestamp 951255912
+<< metal2 >>
+rect -83 20 -79 52
+rect -8 42 -4 68
+rect -8 38 2 42
+rect -8 10 -4 38
+rect -8 6 2 10
+rect -8 0 -4 6
+use writecell writecell_1
+timestamp 951210984
+transform 1 0 -60 0 1 26
+box -35 6 60 42
+use writecell writecell_0
+timestamp 951210984
+transform 1 0 -60 0 1 -6
+box -35 6 60 42
+use sram4cell sram4cell_0
+timestamp 951255912
+transform 1 0 2 0 1 32
+box -2 -33 90 37
+use sram4cell sram4cell_1
+timestamp 951255912
+transform 1 0 90 0 1 32
+box -2 -33 90 37
+use sram4cell sram4cell_2
+timestamp 951255912
+transform 1 0 178 0 1 32
+box -2 -33 90 37
+use readcell readcell_1
+timestamp 951255912
+transform 1 0 423 0 1 31
+box -25 1 28 37
+use sram sram_1
+timestamp 951244380
+transform 0 1 354 -1 0 67
+box -2 -2 36 51
+use sram4cell sram4cell_3
+timestamp 951255912
+transform 1 0 266 0 1 32
+box -2 -33 90 37
+use readcell readcell_0
+timestamp 951255912
+transform 1 0 423 0 1 -1
+box -25 1 28 37
+use sram sram_0
+timestamp 951244380
+transform 0 1 354 -1 0 35
+box -2 -2 36 51
+<< labels >>
+rlabel metal2 -6 2 -6 2 5 Gnd
+<< end >>

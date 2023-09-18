@@ -1,0 +1,1229 @@
+magic
+tech scmos
+timestamp 951733675
+<< pwell >>
+rect 39 160 49 192
+rect 231 160 241 192
+rect 519 160 529 192
+rect 751 160 761 192
+<< nwell >>
+rect 39 192 49 224
+rect 231 192 241 224
+rect 519 192 529 224
+rect 751 192 761 224
+<< metal1 >>
+rect 78 262 129 265
+rect 142 262 177 265
+rect 190 262 361 265
+rect 414 262 505 265
+rect 142 257 145 262
+rect 46 254 145 257
+rect 150 254 201 257
+rect 230 254 425 257
+rect 38 246 97 249
+rect 158 246 441 249
+rect 710 246 801 249
+rect 86 238 553 241
+rect 702 238 809 241
+rect 854 238 905 241
+rect -2 230 105 233
+rect 110 230 169 233
+rect 206 230 377 233
+rect 382 230 401 233
+rect 446 230 537 233
+rect 542 230 617 233
+rect 782 230 905 233
+rect -2 216 906 220
+rect 78 190 89 193
+rect 102 190 113 193
+rect 150 190 169 193
+rect 182 190 193 193
+rect 222 190 249 193
+rect 78 174 81 190
+rect 110 174 113 190
+rect 182 174 185 190
+rect 350 174 369 177
+rect 398 174 401 193
+rect 646 190 657 193
+rect 646 174 649 190
+rect 742 174 761 177
+rect -2 164 906 168
+rect 70 150 121 153
+rect 142 150 273 153
+rect 326 150 545 153
+rect 590 150 737 153
+rect 742 150 905 153
+rect 742 145 745 150
+rect 78 142 185 145
+rect 710 142 745 145
+rect 782 142 809 145
+rect 870 142 905 145
+rect 166 134 241 137
+rect 310 134 425 137
+rect 502 134 601 137
+rect 894 134 905 137
+rect 422 129 425 134
+rect 150 126 321 129
+rect 422 126 649 129
+rect 846 126 905 129
+rect 6 118 73 121
+rect 78 118 113 121
+rect 118 118 241 121
+rect 294 118 521 121
+rect 726 118 817 121
+rect 830 118 905 121
+rect 238 113 241 118
+rect 22 110 113 113
+rect 174 110 217 113
+rect 238 110 249 113
+rect 286 110 353 113
+rect 374 110 505 113
+rect 670 110 713 113
+rect 790 110 881 113
+rect 886 110 905 113
+rect -2 96 906 100
+rect 54 70 65 73
+rect 54 54 57 70
+rect 78 54 81 73
+rect 206 65 209 89
+rect 238 86 257 89
+rect 814 86 825 89
+rect 294 70 313 73
+rect 558 70 585 73
+rect 822 70 825 86
+rect 198 62 209 65
+rect -2 44 906 48
+rect 54 30 161 33
+rect 190 30 265 33
+rect 350 30 601 33
+rect 742 30 793 33
+rect 862 30 905 33
+rect 110 22 353 25
+rect 758 22 905 25
+rect 78 14 297 17
+rect 326 14 641 17
+rect 830 14 905 17
+rect 94 6 193 9
+rect 246 6 345 9
+rect 774 6 841 9
+rect 142 -2 241 1
+rect 822 -2 881 1
+<< metal2 >>
+rect -2 57 1 233
+rect 6 192 9 193
+rect 6 182 10 192
+rect 14 182 18 194
+rect 22 192 25 193
+rect 22 182 26 192
+rect 6 74 9 182
+rect 14 81 17 182
+rect 22 110 25 182
+rect 38 82 41 249
+rect 46 201 49 265
+rect 78 262 81 265
+rect 86 238 89 265
+rect 94 202 97 249
+rect 102 230 105 265
+rect 54 201 58 202
+rect 46 198 58 201
+rect 54 192 58 198
+rect 62 192 66 202
+rect 70 192 74 202
+rect 86 192 90 202
+rect 94 192 98 202
+rect 102 201 106 202
+rect 110 201 113 233
+rect 102 198 113 201
+rect 102 192 106 198
+rect 46 97 50 98
+rect 62 97 65 192
+rect 70 150 73 192
+rect 86 185 89 192
+rect 94 190 97 192
+rect 86 182 105 185
+rect 78 142 81 177
+rect 46 94 65 97
+rect 46 88 50 94
+rect 70 82 73 121
+rect 30 81 34 82
+rect 14 78 34 81
+rect 6 62 10 74
+rect 22 62 26 74
+rect 30 72 34 78
+rect 38 72 42 82
+rect 62 73 66 82
+rect 70 73 74 82
+rect 38 65 41 72
+rect 70 70 73 73
+rect 78 70 81 121
+rect 86 73 90 82
+rect 94 73 98 82
+rect 86 65 89 73
+rect 38 62 89 65
+rect 22 57 25 62
+rect -2 54 25 57
+rect 54 30 57 57
+rect 78 14 81 57
+rect 94 6 97 73
+rect 102 -2 105 182
+rect 118 184 122 194
+rect 126 192 129 265
+rect 150 201 153 257
+rect 158 246 161 265
+rect 166 230 169 265
+rect 174 202 177 265
+rect 190 202 193 265
+rect 198 254 201 265
+rect 206 230 209 265
+rect 150 198 161 201
+rect 110 118 113 177
+rect 118 118 121 184
+rect 126 182 130 192
+rect 142 150 145 193
+rect 110 82 113 113
+rect 150 89 153 129
+rect 118 86 153 89
+rect 118 82 121 86
+rect 150 82 153 86
+rect 110 73 114 82
+rect 118 73 122 82
+rect 110 22 113 73
+rect 134 72 138 82
+rect 142 72 146 82
+rect 150 72 154 82
+rect 134 14 137 72
+rect 142 -2 145 72
+rect 150 70 153 72
+rect 158 30 161 198
+rect 166 193 170 202
+rect 174 193 178 202
+rect 190 193 194 202
+rect 198 193 202 202
+rect 214 193 218 202
+rect 222 193 226 202
+rect 166 134 169 193
+rect 174 185 177 193
+rect 174 182 193 185
+rect 182 142 185 177
+rect 174 74 177 113
+rect 190 89 193 182
+rect 198 118 201 193
+rect 214 110 217 193
+rect 230 137 233 257
+rect 246 192 250 202
+rect 262 177 266 186
+rect 302 185 306 194
+rect 254 174 266 177
+rect 294 184 306 185
+rect 326 192 329 193
+rect 342 192 345 193
+rect 294 182 305 184
+rect 326 182 330 192
+rect 342 182 346 192
+rect 350 182 354 194
+rect 358 192 361 265
+rect 366 238 393 241
+rect 358 182 362 192
+rect 222 134 233 137
+rect 222 89 225 134
+rect 190 86 209 89
+rect 214 86 225 89
+rect 214 82 217 86
+rect 230 82 233 129
+rect 214 81 218 82
+rect 182 78 218 81
+rect 166 57 169 73
+rect 174 62 178 74
+rect 182 57 185 78
+rect 166 54 185 57
+rect 190 62 194 74
+rect 198 64 202 74
+rect 214 72 218 78
+rect 222 72 226 82
+rect 230 72 234 82
+rect 190 6 193 62
+rect 230 57 233 72
+rect 198 54 233 57
+rect 198 -2 201 54
+rect 238 -2 241 137
+rect 246 82 249 113
+rect 254 86 257 174
+rect 270 93 273 153
+rect 294 118 297 182
+rect 326 177 329 182
+rect 302 174 329 177
+rect 270 88 277 93
+rect 270 86 282 88
+rect 246 72 250 82
+rect 274 78 282 86
+rect 286 74 289 113
+rect 262 72 265 73
+rect 246 6 249 72
+rect 262 62 266 72
+rect 286 62 290 74
+rect 294 62 298 72
+rect 262 30 265 62
+rect 294 14 297 62
+rect 302 55 305 174
+rect 326 150 329 174
+rect 310 70 313 137
+rect 318 97 321 129
+rect 342 97 345 182
+rect 350 110 353 182
+rect 318 94 345 97
+rect 318 72 321 94
+rect 330 78 338 88
+rect 318 62 322 72
+rect 302 46 306 55
+rect 326 14 329 65
+rect 342 62 346 74
+rect 350 72 353 73
+rect 350 62 354 72
+rect 342 6 345 62
+rect 350 22 353 62
+rect 358 55 361 182
+rect 366 174 369 238
+rect 374 202 377 233
+rect 382 202 385 233
+rect 390 202 393 238
+rect 374 192 378 202
+rect 382 192 386 202
+rect 390 192 394 202
+rect 382 190 385 192
+rect 390 190 393 192
+rect 398 190 401 233
+rect 414 194 417 265
+rect 422 254 425 265
+rect 438 201 441 249
+rect 446 230 449 265
+rect 502 262 505 265
+rect 534 202 537 233
+rect 542 202 545 233
+rect 446 201 450 202
+rect 438 198 450 201
+rect 406 185 410 192
+rect 382 182 410 185
+rect 414 182 418 194
+rect 446 193 450 198
+rect 422 185 426 192
+rect 446 190 489 193
+rect 462 185 466 186
+rect 422 182 466 185
+rect 374 82 377 113
+rect 382 82 385 182
+rect 462 177 466 182
+rect 398 82 401 177
+rect 462 174 481 177
+rect 422 82 425 129
+rect 374 73 378 82
+rect 382 73 386 82
+rect 398 73 402 82
+rect 406 73 410 82
+rect 374 70 377 73
+rect 382 70 385 73
+rect 406 65 409 73
+rect 422 72 426 82
+rect 478 74 481 174
+rect 486 105 489 190
+rect 502 184 506 194
+rect 534 193 538 202
+rect 542 193 546 202
+rect 502 134 505 184
+rect 542 150 545 193
+rect 550 185 553 241
+rect 606 238 625 241
+rect 558 206 593 209
+rect 558 202 561 206
+rect 590 202 593 206
+rect 558 193 562 202
+rect 566 193 570 202
+rect 566 185 569 193
+rect 550 182 569 185
+rect 582 192 586 202
+rect 590 192 594 202
+rect 598 201 602 202
+rect 606 201 609 238
+rect 598 198 609 201
+rect 598 192 602 198
+rect 614 192 617 233
+rect 622 201 625 238
+rect 622 198 633 201
+rect 582 177 585 192
+rect 590 190 593 192
+rect 614 182 618 192
+rect 622 182 626 194
+rect 630 192 633 198
+rect 654 192 658 202
+rect 630 185 634 192
+rect 670 185 674 186
+rect 630 182 674 185
+rect 582 174 617 177
+rect 502 105 505 113
+rect 486 102 505 105
+rect 502 82 505 102
+rect 422 70 425 72
+rect 438 65 442 66
+rect 406 62 442 65
+rect 478 64 482 74
+rect 502 72 506 82
+rect 502 70 505 72
+rect 518 66 521 121
+rect 590 82 593 153
+rect 598 82 601 137
+rect 614 82 617 174
+rect 478 62 481 64
+rect 358 46 362 55
+rect 438 54 442 62
+rect 518 54 522 66
+rect 558 64 562 74
+rect 582 72 586 82
+rect 590 72 594 82
+rect 598 72 602 82
+rect 614 72 618 82
+rect 590 70 593 72
+rect 598 30 601 72
+rect 614 70 617 72
+rect 622 65 625 182
+rect 630 65 634 66
+rect 622 62 634 65
+rect 630 54 634 62
+rect 638 14 641 182
+rect 646 126 649 177
+rect 670 174 674 182
+rect 670 74 673 113
+rect 702 74 705 241
+rect 710 194 713 249
+rect 798 246 801 265
+rect 806 238 809 265
+rect 710 184 714 194
+rect 734 193 738 202
+rect 742 193 746 202
+rect 782 201 785 233
+rect 750 198 785 201
+rect 710 161 713 184
+rect 710 158 721 161
+rect 670 64 674 74
+rect 670 62 673 64
+rect 694 62 698 72
+rect 702 62 706 74
+rect 710 72 713 145
+rect 710 62 714 72
+rect 694 57 697 62
+rect 718 57 721 158
+rect 734 150 737 193
+rect 694 54 721 57
+rect 726 25 729 121
+rect 750 89 753 198
+rect 766 192 769 193
+rect 766 182 770 192
+rect 774 182 778 194
+rect 782 192 785 198
+rect 806 193 810 202
+rect 814 193 818 202
+rect 782 182 786 192
+rect 734 86 753 89
+rect 734 72 737 86
+rect 734 62 738 72
+rect 742 62 746 74
+rect 750 62 754 72
+rect 742 30 745 62
+rect 750 25 753 62
+rect 726 22 753 25
+rect 758 22 761 177
+rect 766 30 769 182
+rect 774 177 777 182
+rect 774 174 801 177
+rect 782 82 785 145
+rect 790 82 793 113
+rect 774 70 778 82
+rect 782 70 786 82
+rect 790 70 794 82
+rect 774 6 777 70
+rect 790 -2 793 33
+rect 798 -2 801 174
+rect 806 142 809 193
+rect 814 118 817 193
+rect 830 182 834 192
+rect 838 182 842 194
+rect 846 182 850 192
+rect 830 118 833 182
+rect 814 88 818 98
+rect 806 81 810 82
+rect 838 81 841 182
+rect 846 126 849 182
+rect 806 78 841 81
+rect 806 73 810 78
+rect 822 -2 825 73
+rect 830 62 834 72
+rect 838 62 842 74
+rect 854 73 857 241
+rect 870 185 874 192
+rect 846 70 857 73
+rect 862 182 874 185
+rect 878 182 882 194
+rect 886 182 890 192
+rect 846 62 850 70
+rect 830 14 833 62
+rect 838 6 841 62
+rect 862 30 865 182
+rect 870 72 873 145
+rect 878 110 881 182
+rect 886 110 889 182
+rect 870 62 874 72
+rect 878 62 882 74
+rect 894 73 897 137
+rect 886 70 897 73
+rect 886 62 890 70
+rect 878 -2 881 62
+use VIA VIA_133
+timestamp 951727448
+transform 1 0 80 0 1 264
+box -2 -2 2 2
+use VIA VIA_134
+timestamp 951727448
+transform 1 0 128 0 1 264
+box -2 -2 2 2
+use VIA VIA_30
+timestamp 951727448
+transform 1 0 176 0 1 264
+box -2 -2 2 2
+use VIA VIA_49
+timestamp 951727448
+transform 1 0 192 0 1 264
+box -2 -2 2 2
+use VIA VIA_48
+timestamp 951727448
+transform 1 0 360 0 1 264
+box -2 -2 2 2
+use VIA VIA_96
+timestamp 951727448
+transform 1 0 416 0 1 264
+box -2 -2 2 2
+use VIA VIA_95
+timestamp 951727448
+transform 1 0 504 0 1 264
+box -2 -2 2 2
+use VIA VIA_29
+timestamp 951727448
+transform 1 0 48 0 1 256
+box -2 -2 2 2
+use VIA VIA_107
+timestamp 951727448
+transform 1 0 152 0 1 256
+box -2 -2 2 2
+use VIA VIA_106
+timestamp 951727448
+transform 1 0 200 0 1 256
+box -2 -2 2 2
+use VIA VIA_8
+timestamp 951727448
+transform 1 0 232 0 1 256
+box -2 -2 2 2
+use VIA VIA_7
+timestamp 951727448
+transform 1 0 424 0 1 256
+box -2 -2 2 2
+use VIA VIA_28
+timestamp 951727448
+transform 1 0 40 0 1 248
+box -2 -2 2 2
+use VIA VIA_27
+timestamp 951727448
+transform 1 0 96 0 1 248
+box -2 -2 2 2
+use VIA VIA_14
+timestamp 951727448
+transform 1 0 160 0 1 248
+box -2 -2 2 2
+use VIA VIA_15
+timestamp 951727448
+transform 1 0 440 0 1 248
+box -2 -2 2 2
+use VIA VIA_113
+timestamp 951727448
+transform 1 0 712 0 1 248
+box -2 -2 2 2
+use VIA VIA_112
+timestamp 951727448
+transform 1 0 800 0 1 248
+box -2 -2 2 2
+use VIA VIA_71
+timestamp 951727448
+transform 1 0 88 0 1 240
+box -2 -2 2 2
+use VIA VIA_72
+timestamp 951727448
+transform 1 0 552 0 1 240
+box -2 -2 2 2
+use VIA VIA_75
+timestamp 951727448
+transform 1 0 704 0 1 240
+box -2 -2 2 2
+use VIA VIA_74
+timestamp 951727448
+transform 1 0 808 0 1 240
+box -2 -2 2 2
+use VIA VIA_128
+timestamp 951727448
+transform 1 0 856 0 1 240
+box -2 -2 2 2
+use VIA VIA_99
+timestamp 951727448
+transform 1 0 0 0 1 232
+box -2 -2 2 2
+use VIA VIA_98
+timestamp 951727448
+transform 1 0 104 0 1 232
+box -2 -2 2 2
+use VIA VIA_94
+timestamp 951727448
+transform 1 0 112 0 1 232
+box -2 -2 2 2
+use VIA VIA_93
+timestamp 951727448
+transform 1 0 168 0 1 232
+box -2 -2 2 2
+use VIA VIA_24
+timestamp 951727448
+transform 1 0 208 0 1 232
+box -2 -2 2 2
+use VIA VIA_25
+timestamp 951727448
+transform 1 0 376 0 1 232
+box -2 -2 2 2
+use VIA VIA_114
+timestamp 951727448
+transform 1 0 384 0 1 232
+box -2 -2 2 2
+use VIA VIA_115
+timestamp 951727448
+transform 1 0 400 0 1 232
+box -2 -2 2 2
+use VIA VIA_42
+timestamp 951727448
+transform 1 0 448 0 1 232
+box -2 -2 2 2
+use VIA VIA_43
+timestamp 951727448
+transform 1 0 536 0 1 232
+box -2 -2 2 2
+use VIA VIA_16
+timestamp 951727448
+transform 1 0 544 0 1 232
+box -2 -2 2 2
+use VIA VIA_17
+timestamp 951727448
+transform 1 0 616 0 1 232
+box -2 -2 2 2
+use VIA VIA_105
+timestamp 951727448
+transform 1 0 784 0 1 232
+box -2 -2 2 2
+use STD_NOR2 STD_NOR2_0
+timestamp 951727448
+transform 1 0 0 0 1 160
+box 0 0 40 64
+use VIA VIA_47
+timestamp 951727448
+transform 1 0 80 0 1 176
+box -2 -2 2 2
+use VIA VIA_86
+timestamp 951727448
+transform 1 0 112 0 1 176
+box -2 -2 2 2
+use VIA VIA_44
+timestamp 951727448
+transform 1 0 184 0 1 176
+box -2 -2 2 2
+use STD_NAND2 STD_NAND2_0
+timestamp 951727448
+transform 1 0 48 0 1 160
+box 0 0 32 64
+use STD_NAND2 STD_NAND2_1
+timestamp 951727448
+transform 1 0 80 0 1 160
+box 0 0 32 64
+use STD_OAI21 STD_OAI21_0
+timestamp 951727448
+transform 1 0 112 0 1 160
+box 0 0 48 64
+use STD_INV STD_INV_7
+timestamp 951727448
+transform 1 0 160 0 1 160
+box 0 0 24 64
+use STD_INV STD_INV_8
+timestamp 951727448
+transform 1 0 184 0 1 160
+box 0 0 24 64
+use STD_INV STD_INV_9
+timestamp 951727448
+transform 1 0 208 0 1 160
+box 0 0 24 64
+use STD_LATCH STD_LATCH_1
+timestamp 951727448
+transform 1 0 240 0 1 160
+box 0 0 80 64
+use VIA VIA_116
+timestamp 951727448
+transform 1 0 400 0 1 192
+box -2 -2 2 2
+use VIA VIA_102
+timestamp 951727448
+transform 1 0 368 0 1 176
+box -2 -2 2 2
+use VIA VIA_117
+timestamp 951727448
+transform 1 0 400 0 1 176
+box -2 -2 2 2
+use STD_NOR3 STD_NOR3_0
+timestamp 951727448
+transform 1 0 320 0 1 160
+box 0 0 48 64
+use STD_NAND2 STD_NAND2_4
+timestamp 951727448
+transform 1 0 368 0 1 160
+box 0 0 32 64
+use STD_NOR2 STD_NOR2_5
+timestamp 951727448
+transform 1 0 400 0 1 160
+box 0 0 40 64
+use STD_LATCH_B STD_LATCH_B_0
+timestamp 951727448
+transform 1 0 440 0 1 160
+box 0 0 80 64
+use STD_INV STD_INV_2
+timestamp 951727448
+transform 1 0 528 0 1 160
+box 0 0 24 64
+use STD_INV STD_INV_3
+timestamp 951727448
+transform 1 0 552 0 1 160
+box 0 0 24 64
+use STD_NAND2 STD_NAND2_3
+timestamp 951727448
+transform 1 0 576 0 1 160
+box 0 0 32 64
+use VIA VIA_78
+timestamp 951727448
+transform 1 0 648 0 1 176
+box -2 -2 2 2
+use STD_NOR2 STD_NOR2_1
+timestamp 951727448
+transform 1 0 608 0 1 160
+box 0 0 40 64
+use STD_LATCH STD_LATCH_3
+timestamp 951727448
+transform 1 0 648 0 1 160
+box 0 0 80 64
+use STD_INV STD_INV_4
+timestamp 951727448
+transform 1 0 728 0 1 160
+box 0 0 24 64
+use VIA VIA_130
+timestamp 951727448
+transform 1 0 760 0 1 176
+box -2 -2 2 2
+use STD_NOR2 STD_NOR2_3
+timestamp 951727448
+transform 1 0 760 0 1 160
+box 0 0 40 64
+use STD_INV STD_INV_5
+timestamp 951727448
+transform 1 0 800 0 1 160
+box 0 0 24 64
+use STD_NOR2 STD_NOR2_8
+timestamp 951727448
+transform 1 0 824 0 1 160
+box 0 0 40 64
+use STD_NOR2 STD_NOR2_9
+timestamp 951727448
+transform 1 0 864 0 1 160
+box 0 0 40 64
+use VIA VIA_57
+timestamp 951727448
+transform 1 0 72 0 1 152
+box -2 -2 2 2
+use VIA VIA_58
+timestamp 951727448
+transform 1 0 120 0 1 152
+box -2 -2 2 2
+use VIA VIA_4
+timestamp 951727448
+transform 1 0 144 0 1 152
+box -2 -2 2 2
+use VIA VIA_3
+timestamp 951727448
+transform 1 0 272 0 1 152
+box -2 -2 2 2
+use VIA VIA_18
+timestamp 951727448
+transform 1 0 328 0 1 152
+box -2 -2 2 2
+use VIA VIA_19
+timestamp 951727448
+transform 1 0 544 0 1 152
+box -2 -2 2 2
+use VIA VIA_51
+timestamp 951727448
+transform 1 0 592 0 1 152
+box -2 -2 2 2
+use VIA VIA_52
+timestamp 951727448
+transform 1 0 736 0 1 152
+box -2 -2 2 2
+use VIA VIA_46
+timestamp 951727448
+transform 1 0 80 0 1 144
+box -2 -2 2 2
+use VIA VIA_45
+timestamp 951727448
+transform 1 0 184 0 1 144
+box -2 -2 2 2
+use VIA VIA_67
+timestamp 951727448
+transform 1 0 712 0 1 144
+box -2 -2 2 2
+use VIA VIA_103
+timestamp 951727448
+transform 1 0 784 0 1 144
+box -2 -2 2 2
+use VIA VIA_104
+timestamp 951727448
+transform 1 0 808 0 1 144
+box -2 -2 2 2
+use VIA VIA_2
+timestamp 951727448
+transform 1 0 872 0 1 144
+box -2 -2 2 2
+use VIA VIA_123
+timestamp 951727448
+transform 1 0 168 0 1 136
+box -2 -2 2 2
+use VIA VIA_122
+timestamp 951727448
+transform 1 0 240 0 1 136
+box -2 -2 2 2
+use VIA VIA_82
+timestamp 951727448
+transform 1 0 312 0 1 136
+box -2 -2 2 2
+use VIA VIA_32
+timestamp 951727448
+transform 1 0 504 0 1 136
+box -2 -2 2 2
+use VIA VIA_33
+timestamp 951727448
+transform 1 0 600 0 1 136
+box -2 -2 2 2
+use VIA VIA_73
+timestamp 951727448
+transform 1 0 896 0 1 136
+box -2 -2 2 2
+use VIA VIA_21
+timestamp 951727448
+transform 1 0 152 0 1 128
+box -2 -2 2 2
+use VIA VIA_23
+timestamp 951727448
+transform 1 0 232 0 1 128
+box -2 -2 2 2
+use VIA VIA_20
+timestamp 951727448
+transform 1 0 232 0 1 128
+box -2 -2 2 2
+use VIA VIA_22
+timestamp 951727448
+transform 1 0 320 0 1 128
+box -2 -2 2 2
+use VIA VIA_83
+timestamp 951727448
+transform 1 0 424 0 1 128
+box -2 -2 2 2
+use VIA VIA_79
+timestamp 951727448
+transform 1 0 424 0 1 128
+box -2 -2 2 2
+use VIA VIA_80
+timestamp 951727448
+transform 1 0 616 0 1 128
+box -2 -2 2 2
+use VIA VIA_76
+timestamp 951727448
+transform 1 0 616 0 1 128
+box -2 -2 2 2
+use VIA VIA_77
+timestamp 951727448
+transform 1 0 648 0 1 128
+box -2 -2 2 2
+use VIA VIA_97
+timestamp 951727448
+transform 1 0 848 0 1 128
+box -2 -2 2 2
+use VIA VIA_132
+timestamp 951727448
+transform 1 0 8 0 1 120
+box -2 -2 2 2
+use VIA VIA_131
+timestamp 951727448
+transform 1 0 72 0 1 120
+box -2 -2 2 2
+use VIA VIA_88
+timestamp 951727448
+transform 1 0 80 0 1 120
+box -2 -2 2 2
+use VIA VIA_87
+timestamp 951727448
+transform 1 0 112 0 1 120
+box -2 -2 2 2
+use VIA VIA_60
+timestamp 951727448
+transform 1 0 120 0 1 120
+box -2 -2 2 2
+use VIA VIA_62
+timestamp 951727448
+transform 1 0 200 0 1 120
+box -2 -2 2 2
+use VIA VIA_59
+timestamp 951727448
+transform 1 0 200 0 1 120
+box -2 -2 2 2
+use VIA VIA_0
+timestamp 951727448
+transform 1 0 296 0 1 120
+box -2 -2 2 2
+use VIA VIA_1
+timestamp 951727448
+transform 1 0 520 0 1 120
+box -2 -2 2 2
+use VIA VIA_137
+timestamp 951727448
+transform 1 0 728 0 1 120
+box -2 -2 2 2
+use VIA VIA_136
+timestamp 951727448
+transform 1 0 816 0 1 120
+box -2 -2 2 2
+use VIA VIA_26
+timestamp 951727448
+transform 1 0 832 0 1 120
+box -2 -2 2 2
+use VIA VIA_38
+timestamp 951727448
+transform 1 0 24 0 1 112
+box -2 -2 2 2
+use VIA VIA_39
+timestamp 951727448
+transform 1 0 112 0 1 112
+box -2 -2 2 2
+use VIA VIA_118
+timestamp 951727448
+transform 1 0 176 0 1 112
+box -2 -2 2 2
+use VIA VIA_119
+timestamp 951727448
+transform 1 0 216 0 1 112
+box -2 -2 2 2
+use VIA VIA_61
+timestamp 951727448
+transform 1 0 248 0 1 112
+box -2 -2 2 2
+use VIA VIA_101
+timestamp 951727448
+transform 1 0 288 0 1 112
+box -2 -2 2 2
+use VIA VIA_100
+timestamp 951727448
+transform 1 0 352 0 1 112
+box -2 -2 2 2
+use VIA VIA_12
+timestamp 951727448
+transform 1 0 376 0 1 112
+box -2 -2 2 2
+use VIA VIA_13
+timestamp 951727448
+transform 1 0 504 0 1 112
+box -2 -2 2 2
+use VIA VIA_65
+timestamp 951727448
+transform 1 0 672 0 1 112
+box -2 -2 2 2
+use VIA VIA_66
+timestamp 951727448
+transform 1 0 712 0 1 112
+box -2 -2 2 2
+use VIA VIA_10
+timestamp 951727448
+transform 1 0 792 0 1 112
+box -2 -2 2 2
+use VIA VIA_9
+timestamp 951727448
+transform 1 0 880 0 1 112
+box -2 -2 2 2
+use VIA VIA_50
+timestamp 951727448
+transform 1 0 888 0 1 112
+box -2 -2 2 2
+use VIA VIA_89
+timestamp 951727448
+transform 1 0 80 0 1 72
+box -2 -2 2 2
+use VIA VIA_110
+timestamp 951727448
+transform 1 0 56 0 1 56
+box -2 -2 2 2
+use VIA VIA_90
+timestamp 951727448
+transform 1 0 80 0 1 56
+box -2 -2 2 2
+use STD_OAI22 STD_OAI22_0
+timestamp 951727448
+transform 1 0 0 0 1 40
+box 0 0 56 64
+use STD_INV STD_INV_0
+timestamp 951727448
+transform 1 0 56 0 1 40
+box 0 0 24 64
+use STD_INV STD_INV_1
+timestamp 951727448
+transform 1 0 80 0 1 40
+box 0 0 24 64
+use STD_INV STD_INV_6
+timestamp 951727448
+transform 1 0 104 0 1 40
+box 0 0 24 64
+use STD_NAND2 STD_NAND2_5
+timestamp 951727448
+transform 1 0 128 0 1 40
+box 0 0 32 64
+use VIA VIA_31
+timestamp 951727448
+transform 1 0 208 0 1 88
+box -2 -2 2 2
+use VIA VIA_11
+timestamp 951727448
+transform 1 0 256 0 1 88
+box -2 -2 2 2
+use STD_AOI21 STD_AOI21_0
+timestamp 951727448
+transform 1 0 160 0 1 40
+box 0 0 48 64
+use STD_NAND3 STD_NAND3_0
+timestamp 951727448
+transform 1 0 208 0 1 40
+box 0 0 48 64
+use VIA VIA_81
+timestamp 951727448
+transform 1 0 312 0 1 72
+box -2 -2 2 2
+use STD_AOI22 STD_AOI22_0
+timestamp 951727448
+transform 1 0 256 0 1 40
+box 0 0 56 64
+use STD_AOI22 STD_AOI22_1
+timestamp 951727448
+transform 1 0 312 0 1 40
+box 0 0 56 64
+use STD_INV STD_INV_10
+timestamp 951727448
+transform 1 0 368 0 1 40
+box 0 0 24 64
+use STD_INV STD_INV_11
+timestamp 951727448
+transform 1 0 392 0 1 40
+box 0 0 24 64
+use STD_LATCH STD_LATCH_4
+timestamp 951727448
+transform 1 0 416 0 1 40
+box 0 0 80 64
+use STD_LATCH STD_LATCH_0
+timestamp 951727448
+transform 1 0 496 0 1 40
+box 0 0 80 64
+use STD_NAND2 STD_NAND2_2
+timestamp 951727448
+transform 1 0 576 0 1 40
+box 0 0 32 64
+use STD_LATCH STD_LATCH_2
+timestamp 951727448
+transform 1 0 608 0 1 40
+box 0 0 80 64
+use STD_NOR2 STD_NOR2_4
+timestamp 951727448
+transform 1 0 688 0 1 40
+box 0 0 40 64
+use STD_NOR2 STD_NOR2_2
+timestamp 951727448
+transform 1 0 728 0 1 40
+box 0 0 40 64
+use VIA VIA_70
+timestamp 951727448
+transform 1 0 824 0 1 72
+box -2 -2 2 2
+use STD_NAND4 STD_NAND4_0
+timestamp 951727448
+transform 1 0 768 0 1 40
+box -1 0 56 64
+use STD_NOR2 STD_NOR2_6
+timestamp 951727448
+transform 1 0 824 0 1 40
+box 0 0 40 64
+use STD_NOR2 STD_NOR2_7
+timestamp 951727448
+transform 1 0 864 0 1 40
+box 0 0 40 64
+use VIA VIA_109
+timestamp 951727448
+transform 1 0 56 0 1 32
+box -2 -2 2 2
+use VIA VIA_108
+timestamp 951727448
+transform 1 0 160 0 1 32
+box -2 -2 2 2
+use VIA VIA_54
+timestamp 951727448
+transform 1 0 192 0 1 32
+box -2 -2 2 2
+use VIA VIA_53
+timestamp 951727448
+transform 1 0 264 0 1 32
+box -2 -2 2 2
+use VIA VIA_34
+timestamp 951727448
+transform 1 0 352 0 1 32
+box -2 -2 2 2
+use VIA VIA_35
+timestamp 951727448
+transform 1 0 600 0 1 32
+box -2 -2 2 2
+use VIA VIA_127
+timestamp 951727448
+transform 1 0 744 0 1 32
+box -2 -2 2 2
+use VIA VIA_125
+timestamp 951727448
+transform 1 0 744 0 1 32
+box -2 -2 2 2
+use VIA VIA_126
+timestamp 951727448
+transform 1 0 768 0 1 32
+box -2 -2 2 2
+use VIA VIA_124
+timestamp 951727448
+transform 1 0 792 0 1 32
+box -2 -2 2 2
+use VIA VIA_111
+timestamp 951727448
+transform 1 0 864 0 1 32
+box -2 -2 2 2
+use VIA VIA_36
+timestamp 951727448
+transform 1 0 112 0 1 24
+box -2 -2 2 2
+use VIA VIA_37
+timestamp 951727448
+transform 1 0 352 0 1 24
+box -2 -2 2 2
+use VIA VIA_129
+timestamp 951727448
+transform 1 0 760 0 1 24
+box -2 -2 2 2
+use VIA VIA_91
+timestamp 951727448
+transform 1 0 80 0 1 16
+box -2 -2 2 2
+use VIA VIA_84
+timestamp 951727448
+transform 1 0 136 0 1 16
+box -2 -2 2 2
+use VIA VIA_92
+timestamp 951727448
+transform 1 0 136 0 1 16
+box -2 -2 2 2
+use VIA VIA_85
+timestamp 951727448
+transform 1 0 296 0 1 16
+box -2 -2 2 2
+use VIA VIA_5
+timestamp 951727448
+transform 1 0 328 0 1 16
+box -2 -2 2 2
+use VIA VIA_6
+timestamp 951727448
+transform 1 0 640 0 1 16
+box -2 -2 2 2
+use VIA VIA_135
+timestamp 951727448
+transform 1 0 832 0 1 16
+box -2 -2 2 2
+use VIA VIA_55
+timestamp 951727448
+transform 1 0 96 0 1 8
+box -2 -2 2 2
+use VIA VIA_56
+timestamp 951727448
+transform 1 0 192 0 1 8
+box -2 -2 2 2
+use VIA VIA_64
+timestamp 951727448
+transform 1 0 248 0 1 8
+box -2 -2 2 2
+use VIA VIA_63
+timestamp 951727448
+transform 1 0 344 0 1 8
+box -2 -2 2 2
+use VIA VIA_41
+timestamp 951727448
+transform 1 0 776 0 1 8
+box -2 -2 2 2
+use VIA VIA_40
+timestamp 951727448
+transform 1 0 840 0 1 8
+box -2 -2 2 2
+use VIA VIA_120
+timestamp 951727448
+transform 1 0 144 0 1 0
+box -2 -2 2 2
+use VIA VIA_121
+timestamp 951727448
+transform 1 0 240 0 1 0
+box -2 -2 2 2
+use VIA VIA_69
+timestamp 951727448
+transform 1 0 824 0 1 0
+box -2 -2 2 2
+use VIA VIA_68
+timestamp 951727448
+transform 1 0 880 0 1 0
+box -2 -2 2 2
+<< labels >>
+rlabel metal1 904 144 904 144 6 SR_TOCONTROL_S1[18]
+rlabel metal2 424 264 424 264 6 WORDCOUNTEROUT2_S1
+rlabel metal2 160 264 160 264 6 PHI2
+rlabel metal2 200 0 200 0 8 INPUT_READY_S1
+rlabel metal2 208 264 208 264 6 PIXCOUNTEROUT7_S1
+rlabel metal2 800 0 800 0 8 SAT_CONTROLS_S1[0]
+rlabel metal1 904 120 904 120 6 SR_TOCONTROL_S1[15]
+rlabel metal2 48 264 48 264 6 WRITE_MEM_Q1
+rlabel metal2 448 264 448 264 6 KERNELCOUNTEROUT2_S1
+rlabel metal2 104 0 104 0 8 RESET_S1
+rlabel metal1 904 112 904 112 6 SR_TOCONTROL_S1[12]
+rlabel metal1 904 152 904 152 6 SHIFT_RIGHT_S2
+rlabel metal2 88 264 88 264 6 C9_PHI1_Q1
+rlabel metal1 904 136 904 136 6 SR_TOCONTROL_S1[17]
+rlabel metal2 808 264 808 264 6 NO_SHIFT_S2
+rlabel metal2 168 264 168 264 6 PHI1
+rlabel metal2 504 264 504 264 6 C3_PHI2_Q2
+rlabel metal1 904 128 904 128 6 SR_TOCONTROL_S1[14]
+rlabel metal2 104 264 104 264 6 P3_PHI1_Q1
+rlabel metal1 904 232 904 232 6 SR_TOCONTROL_S1[19]
+rlabel metal2 200 264 200 264 6 WORDCOUNTEROUT0_S1
+rlabel metal1 904 32 904 32 6 SR_TOCONTROL_S1[11]
+rlabel metal2 800 264 800 264 6 RESET_SHIFT_S2
+rlabel metal2 792 0 792 0 8 SAT_CONTROLS_S1[1]
+rlabel metal1 904 240 904 240 6 SR_TOCONTROL_S1[16]
+rlabel metal1 904 24 904 24 6 KERNEL_EN_S1
+rlabel metal2 80 264 80 264 6 C8_PHI1_Q1
+rlabel metal1 904 16 904 16 6 SR_TOCONTROL_S1[13]
+rlabel space -4 98 -4 98 3 Vdd
+rlabel space -3 46 -3 46 3 Gnd
+<< end >>

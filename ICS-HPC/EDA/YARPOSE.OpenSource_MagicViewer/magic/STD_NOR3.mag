@@ -1,0 +1,110 @@
+magic
+tech scmos
+timestamp 951727448
+<< pwell >>
+rect 0 0 48 32
+<< nwell >>
+rect 0 32 48 64
+<< polysilicon >>
+rect 11 56 37 58
+rect 11 52 13 56
+rect 15 52 17 54
+rect 19 52 21 54
+rect 27 52 29 54
+rect 31 52 33 54
+rect 35 52 37 56
+rect 11 24 13 40
+rect 15 29 17 40
+rect 19 37 21 40
+rect 19 35 23 37
+rect 15 27 21 29
+rect 19 24 21 27
+rect 27 24 29 40
+rect 31 36 33 40
+rect 35 38 37 40
+rect 31 34 37 36
+rect 11 10 13 12
+rect 19 8 21 12
+rect 27 10 29 12
+rect 35 8 37 34
+rect 19 6 37 8
+<< ndiffusion >>
+rect 10 12 11 24
+rect 13 12 14 24
+rect 18 12 19 24
+rect 21 12 22 24
+rect 26 12 27 24
+rect 29 12 30 24
+<< pdiffusion >>
+rect 10 40 11 52
+rect 13 40 15 52
+rect 17 40 19 52
+rect 21 40 22 52
+rect 26 40 27 52
+rect 29 40 31 52
+rect 33 40 35 52
+rect 37 40 38 52
+<< metal1 >>
+rect 0 56 6 60
+rect 10 56 38 60
+rect 42 56 48 60
+rect 6 52 10 56
+rect 38 52 42 56
+rect 14 45 22 48
+rect 7 32 10 33
+rect 14 24 18 45
+rect 26 45 33 48
+rect 23 32 26 33
+rect 30 30 33 45
+rect 38 27 41 28
+rect 30 24 34 26
+rect 6 8 10 12
+rect 22 8 26 12
+rect 0 4 6 8
+rect 10 4 38 8
+rect 42 4 48 8
+<< ntransistor >>
+rect 11 12 13 24
+rect 19 12 21 24
+rect 27 12 29 24
+<< ptransistor >>
+rect 11 40 13 52
+rect 15 40 17 52
+rect 19 40 21 52
+rect 27 40 29 52
+rect 31 40 33 52
+rect 35 40 37 52
+<< polycontact >>
+rect 7 33 11 37
+rect 23 33 27 37
+rect 37 23 41 27
+<< ndcontact >>
+rect 6 12 10 24
+rect 14 12 18 24
+rect 22 12 26 24
+rect 30 12 34 24
+<< pdcontact >>
+rect 6 40 10 52
+rect 22 40 26 52
+rect 38 40 42 52
+<< m2contact >>
+rect 6 28 10 32
+rect 22 28 26 32
+rect 30 26 34 30
+rect 38 28 42 32
+<< psubstratepcontact >>
+rect 6 4 10 8
+rect 38 4 42 8
+<< nsubstratencontact >>
+rect 6 56 10 60
+rect 38 56 42 60
+<< labels >>
+rlabel m2contact 32 28 32 28 6 Out_b
+rlabel m2contact 24 30 24 30 6 In0
+rlabel m2contact 8 30 8 30 6 In2
+rlabel m2contact 40 30 40 30 6 In1
+rlabel metal1 4 6 4 6 6 GND
+rlabel metal1 44 6 44 6 6 GND
+rlabel metal1 4 58 4 58 6 Vdd
+rlabel metal1 44 58 44 58 6 Vdd
+<< end >>

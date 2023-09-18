@@ -1,0 +1,221 @@
+magic
+tech scmos
+timestamp 951985653
+<< metal1 >>
+rect 966 908 974 912
+rect 1014 908 1020 912
+rect 1046 908 1052 912
+rect 186 640 190 703
+rect 218 640 222 711
+rect 264 640 268 719
+rect 302 599 306 731
+rect 478 727 486 731
+rect 926 727 936 731
+rect 482 599 486 727
+rect 520 639 524 719
+rect 566 640 570 711
+rect 598 639 602 703
+rect 932 602 936 727
+rect 970 723 974 908
+rect 970 640 974 719
+rect 1016 715 1020 908
+rect 1016 640 1020 711
+rect 1048 707 1052 908
+rect 1430 905 1434 912
+rect 1430 901 1432 905
+rect 1432 880 1436 901
+rect 1462 897 1466 912
+rect 1462 893 1464 897
+rect 1464 880 1468 893
+rect 1510 889 1514 912
+rect 1510 880 1514 885
+rect 1574 776 1578 912
+rect 1582 742 1586 912
+rect 1048 639 1052 703
+rect 1590 656 1594 912
+rect 1598 622 1602 912
+rect 1618 640 1622 901
+rect 1650 640 1654 893
+rect 1696 639 1700 885
+rect 1718 777 1722 912
+rect 1734 792 1738 912
+rect 1750 806 1754 912
+rect 1766 827 1770 912
+rect 1766 821 1778 827
+rect 1750 801 1770 806
+rect 1734 787 1762 792
+rect 1718 773 1754 777
+rect 1750 587 1754 773
+rect 1758 599 1762 787
+rect 1766 610 1770 801
+rect 1774 624 1778 821
+rect 1774 620 1779 624
+rect 1766 606 1772 610
+rect 1758 595 1765 599
+rect 1750 583 1758 587
+rect 1754 580 1758 583
+rect 1761 582 1765 595
+rect 1768 581 1772 606
+rect 1775 580 1779 620
+rect 1782 580 1786 912
+rect 1814 658 1818 912
+rect 1846 658 1850 912
+rect 1810 654 1818 658
+rect 1842 654 1850 658
+rect 1886 658 1890 912
+rect 1929 759 1938 874
+rect 1886 654 1892 658
+rect 1810 640 1814 654
+rect 1842 641 1846 654
+rect 1888 640 1892 654
+rect 1941 579 1945 912
+rect 1948 579 1952 912
+rect 1955 579 1959 912
+rect 1838 0 1842 5
+<< metal2 >>
+rect 1436 901 1618 905
+rect 1468 893 1650 897
+rect 1514 885 1696 889
+rect 1518 874 1929 881
+rect 1569 772 1574 776
+rect 1967 760 1976 766
+rect 1938 754 1976 760
+rect 1568 738 1582 742
+rect 268 719 520 723
+rect 524 719 970 723
+rect 222 711 566 715
+rect 570 711 1016 715
+rect 190 703 598 707
+rect 602 703 1048 707
+rect 1968 691 1976 700
+rect 1568 652 1590 656
+rect 272 634 311 639
+rect 1568 618 1598 622
+rect 0 550 4 557
+rect 1971 555 1976 562
+rect 0 477 4 482
+rect 1972 475 1976 482
+rect 0 430 4 437
+rect 1972 435 1976 442
+rect 0 357 4 362
+rect 1972 355 1976 362
+rect 0 310 4 317
+rect 1972 315 1976 322
+rect 0 237 4 242
+rect 1972 235 1976 242
+rect 0 190 4 197
+rect 1972 195 1976 202
+rect 0 117 4 122
+rect 1972 115 1976 122
+rect 0 86 8 90
+rect 0 78 8 82
+rect 0 70 8 74
+rect 0 62 8 66
+rect 0 54 8 58
+rect 0 46 8 50
+rect 0 38 8 42
+rect 0 30 8 34
+rect 0 22 8 26
+<< m2contact >>
+rect 264 719 268 723
+rect 218 711 222 715
+rect 186 703 190 707
+rect 520 719 524 723
+rect 566 711 570 715
+rect 598 703 602 707
+rect 970 719 974 723
+rect 1016 711 1020 715
+rect 1432 901 1436 905
+rect 1464 893 1468 897
+rect 1510 885 1514 889
+rect 1574 772 1578 776
+rect 1582 738 1586 742
+rect 1048 703 1052 707
+rect 1590 652 1594 656
+rect 1618 901 1622 905
+rect 1650 893 1654 897
+rect 1696 885 1700 889
+rect 1598 618 1602 622
+rect 1929 874 1938 881
+use muxbuffer muxbuffer_3
+timestamp 951381780
+transform 1 0 815 0 1 -175
+box 615 990 703 1056
+use muxbuffer muxbuffer_0
+timestamp 951381780
+transform 1 0 -431 0 1 -415
+box 615 990 703 1056
+use muxbuffer muxbuffer_1
+timestamp 951381780
+transform -1 0 1219 0 1 -415
+box 615 990 703 1056
+use muxbuffer muxbuffer_2
+timestamp 951381780
+transform -1 0 1669 0 1 -415
+box 615 990 703 1056
+use muxbuffer muxbuffer_4
+timestamp 951381780
+transform 1 0 1001 0 1 -415
+box 615 990 703 1056
+use muxbuffer muxbuffer_5
+timestamp 951381780
+transform 1 0 1193 0 1 -415
+box 615 990 703 1056
+use fulldp fulldp_0
+timestamp 951985653
+transform 1 0 38 0 1 95
+box -36 -90 1935 727
+<< labels >>
+rlabel metal2 0 22 4 26 0 Word_line_q1[0]
+rlabel metal2 0 30 4 34 0 Word_line_q1[1]
+rlabel metal2 0 38 4 42 0 Word_line_q1[2]
+rlabel metal2 0 46 4 50 0 Word_line_q1[5]
+rlabel metal2 0 54 4 58 0 Word_line_q1[4]
+rlabel metal2 0 62 4 66 0 Word_line_q1[3]
+rlabel metal2 0 70 4 74 0 Word_line_q1[8]
+rlabel metal2 0 78 4 82 0 Word_line_q1[7]
+rlabel metal2 0 86 4 90 0 Word_line_q1[6]
+rlabel metal2 0 118 4 122 0 Kernel_Bus_b_v1[0]
+rlabel metal2 0 190 4 194 0 Kernel_Bus_b_v1[1]
+rlabel metal2 0 238 4 242 0 Kernel_Bus_b_v1[2]
+rlabel metal2 0 310 4 314 0 Kernel_Bus_b_v1[3]
+rlabel metal2 0 358 4 362 0 Kernel_Bus_b_v1[4]
+rlabel metal2 0 430 4 434 0 Kernel_Bus_b_v1[5]
+rlabel metal2 0 478 4 482 0 Kernel_Bus_b_v1[6]
+rlabel metal2 0 550 4 554 0 Kernel_Bus_b_v1[7]
+rlabel metal1 966 908 970 912 0 Kernel_Mux_s1[2]
+rlabel metal1 1014 908 1018 912 0 Kernel_Mux_s1[1]
+rlabel metal1 1046 908 1050 912 0 Kernel_Mux_s1[0]
+rlabel metal1 1430 908 1434 912 0 Shift_Right_s2
+rlabel metal1 1462 908 1466 912 0 Reset_Shift_s2
+rlabel metal1 1510 908 1514 912 0 No_Shift_s2
+rlabel metal1 1574 908 1578 912 0 SR_toControl_s1[19]
+rlabel metal1 1582 908 1586 912 0 SR_toControl_s1[18]
+rlabel metal1 1590 908 1594 912 0 SR_toControl_s1[17]
+rlabel metal1 1598 908 1602 912 0 SR_toControl_s1[16]
+rlabel metal1 1718 908 1722 912 0 SR_toControl_s1[15]
+rlabel metal1 1734 908 1738 912 0 SR_toControl_s1[14]
+rlabel metal1 1750 908 1754 912 0 SR_toControl_s1[13]
+rlabel metal1 1766 908 1770 912 0 SR_toControl_s1[12]
+rlabel metal1 1782 908 1786 912 0 SR_toControl_s1[11]
+rlabel metal1 1814 908 1818 912 0 Sat_Control_s1[1]
+rlabel metal1 1846 908 1850 912 0 Sat_Control_s1[2]
+rlabel metal1 1886 908 1890 912 0 Sat_Control_s1[0]
+rlabel metal2 1972 758 1976 762 0 Vdd
+rlabel metal2 1972 694 1976 698 0 Gnd
+rlabel metal2 1972 558 1976 562 0 Final_Output_s1[7]
+rlabel metal2 1972 478 1976 482 0 Final_Output_s1[6]
+rlabel metal2 1972 438 1976 442 0 Final_Output_s1[5]
+rlabel metal2 1972 358 1976 362 0 Final_Output_s1[4]
+rlabel metal2 1972 318 1976 322 0 Final_Output_s1[3]
+rlabel metal2 1972 238 1976 242 0 Final_Output_s1[2]
+rlabel metal2 1972 198 1976 202 0 Final_Output_s1[1]
+rlabel metal2 1972 118 1976 122 0 Final_Output_s1[0]
+rlabel metal1 1838 0 1842 4 0 dummy
+rlabel metal1 1941 908 1945 912 0 Phi1
+rlabel metal1 1948 908 1952 912 0 Phi2
+rlabel metal1 1955 908 1959 912 0 Kernel_en_s1
+rlabel metal1 302 727 306 731 0 pixel_bit0_v1
+rlabel metal1 478 727 482 731 0 pixel_bit1_v1
+rlabel metal1 926 727 930 731 0 pixel_bit2_v1
+<< end >>

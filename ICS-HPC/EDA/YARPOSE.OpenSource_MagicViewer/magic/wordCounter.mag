@@ -1,0 +1,88 @@
+magic
+tech scmos
+timestamp 951112323
+<< metal1 >>
+rect 9 484 12 492
+rect 16 484 19 488
+rect 117 484 120 492
+rect 124 484 127 488
+rect 61 -47 65 -43
+<< metal2 >>
+rect 49 532 118 537
+rect 153 532 165 537
+rect 8 500 12 504
+rect 116 500 120 504
+rect 32 479 38 484
+rect 1 445 6 449
+rect 2 395 6 399
+rect 2 325 7 329
+rect 2 275 6 279
+rect 2 205 6 209
+rect 2 154 7 159
+rect 163 119 166 125
+rect 2 85 5 89
+rect 29 59 36 65
+rect 2 35 7 39
+rect 3 -35 6 -31
+<< m2contact >>
+rect 9 492 13 496
+rect 117 492 121 496
+use inverters inverters_0
+timestamp 951078626
+transform 1 0 47 0 1 492
+box -37 -12 2 45
+use inverters inverters_1
+timestamp 951078626
+transform 1 0 155 0 1 492
+box -37 -12 2 45
+use SetCell SetCell_0
+timestamp 951088720
+transform 1 0 18 0 1 423
+box -17 -3 147 61
+use ResetCell ResetCell_0
+timestamp 951088720
+transform 1 0 23 0 -1 411
+box -21 -13 142 51
+use ResetCellflip ResetCellflip_0
+timestamp 951112323
+transform 1 0 -7 0 1 213
+box 9 87 172 151
+use ResetCell ResetCell_1
+timestamp 951088720
+transform 1 0 23 0 -1 291
+box -21 -13 142 51
+use ResetCellflip ResetCellflip_1
+timestamp 951112323
+transform 1 0 -7 0 1 93
+box 9 87 172 151
+use ResetCell ResetCell_2
+timestamp 951088720
+transform 1 0 23 0 -1 171
+box -21 -13 142 51
+use ResetCellflip ResetCellflip_2
+timestamp 951112323
+transform 1 0 -7 0 1 -27
+box 9 87 172 151
+use ResetCell ResetCell_3
+timestamp 951088720
+transform 1 0 23 0 -1 51
+box -21 -13 142 51
+use ResetCellflip ResetCellflip_3
+timestamp 951112323
+transform 1 0 -7 0 1 -147
+box 9 87 172 151
+<< labels >>
+rlabel metal2 35 482 35 482 5 Vdd
+rlabel metal2 32 62 32 62 1 Gnd
+rlabel metal2 9 502 9 502 1 Phi2
+rlabel metal2 117 502 117 502 1 c9_Phi1_q1
+rlabel metal2 3 447 3 447 7 wordcounterOut_s1[0]
+rlabel metal2 4 397 4 397 7 wordcounterOut_s1[1]
+rlabel metal2 4 327 4 327 7 wordcounterOut_s1[2]
+rlabel metal2 4 277 4 277 7 wordcounterOut_s1[3]
+rlabel metal2 4 207 4 207 7 wordcounterOut_s1[4]
+rlabel metal2 3 156 3 156 7 wordcounterOut_s1[5]
+rlabel metal2 3 87 3 87 7 wordcounterOut_s1[6]
+rlabel metal2 4 36 4 36 7 wordcounterOut_s1[7]
+rlabel metal2 3 -33 3 -33 3 wordCounterOut_s1[8]
+<< end >>

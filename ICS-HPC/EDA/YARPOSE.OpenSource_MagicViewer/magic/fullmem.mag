@@ -1,0 +1,294 @@
+magic
+tech scmos
+timestamp 951572955
+<< metal1 >>
+rect 69 770 73 788
+rect 139 769 143 784
+rect 227 770 231 784
+rect 315 770 319 784
+rect 403 770 407 784
+rect 491 770 495 784
+rect 538 773 539 776
+rect 538 772 548 773
+rect -2 761 1 765
+rect -2 729 1 733
+rect -2 697 1 701
+rect -2 665 1 669
+rect -2 633 1 637
+rect -2 601 1 605
+rect -2 569 1 573
+rect -2 537 1 541
+rect -20 527 2 531
+rect -2 505 1 509
+rect -2 473 1 477
+rect -2 441 1 445
+rect -2 409 1 413
+rect -2 377 1 381
+rect -2 345 1 349
+rect -2 313 1 317
+rect -2 281 1 285
+rect -12 271 2 275
+rect -2 249 1 253
+rect -2 217 1 221
+rect -2 185 1 189
+rect -2 153 1 157
+rect -2 121 1 125
+rect -2 89 1 93
+rect -2 57 1 61
+rect -2 25 1 29
+rect -4 15 0 19
+rect -24 -10 69 -4
+rect 73 -10 96 -4
+rect 104 -10 108 3
+rect 139 -4 143 0
+rect 174 -10 178 3
+rect 9 -18 85 -13
+rect 91 -21 99 -13
+rect 183 -14 187 1
+rect 192 -10 196 3
+rect 227 -4 231 0
+rect 262 -10 266 3
+rect 271 -14 275 0
+rect 280 -10 284 3
+rect 315 -4 319 0
+rect 350 -10 354 3
+rect 359 -14 363 0
+rect 368 -10 372 3
+rect 403 -4 407 0
+rect 438 -10 442 3
+rect 447 -14 451 0
+rect 456 -10 460 3
+rect 494 0 502 4
+rect 544 3 548 772
+rect 498 -4 502 0
+rect -23 -107 99 -101
+rect 135 -106 138 -100
+rect 144 -106 147 -100
+rect 223 -106 226 -103
+rect 232 -106 235 -103
+rect 311 -106 314 -103
+rect 320 -106 323 -103
+rect 399 -106 402 -103
+rect 408 -106 411 -103
+rect 487 -106 490 -103
+rect 93 -117 99 -107
+rect 498 -111 504 -10
+rect 540 -14 548 3
+<< metal2 >>
+rect 73 789 138 793
+rect 73 788 139 789
+rect 133 784 139 788
+rect 143 784 227 789
+rect 231 784 315 789
+rect 319 784 403 789
+rect 407 784 491 789
+rect 0 780 95 784
+rect 0 776 539 780
+rect 0 771 8 776
+rect 87 773 539 776
+rect 87 772 548 773
+rect -24 -4 -20 527
+rect -16 -4 -12 271
+rect -8 -4 -4 15
+rect 0 0 4 771
+rect 544 760 549 764
+rect 544 744 549 748
+rect 544 728 549 732
+rect 544 712 549 716
+rect 544 696 549 700
+rect 544 680 549 684
+rect 544 664 549 668
+rect 544 648 549 652
+rect 544 632 549 636
+rect 544 616 549 620
+rect 544 600 549 604
+rect 544 584 549 588
+rect 544 568 549 572
+rect 544 552 549 556
+rect 544 536 549 540
+rect 544 520 549 524
+rect 544 504 549 508
+rect 544 488 549 492
+rect 544 472 549 476
+rect 544 456 549 460
+rect 544 440 549 444
+rect 544 424 549 428
+rect 544 408 549 412
+rect 544 392 549 396
+rect 544 376 549 380
+rect 544 360 549 364
+rect 544 344 549 348
+rect 544 328 549 332
+rect 544 312 549 316
+rect 544 296 549 300
+rect 544 280 549 284
+rect 544 264 549 268
+rect 544 248 549 252
+rect 544 232 549 236
+rect 544 216 549 220
+rect 544 200 549 204
+rect 544 184 549 188
+rect 544 168 549 172
+rect 544 152 549 156
+rect 544 136 549 140
+rect 544 120 549 124
+rect 544 104 549 108
+rect 544 88 549 92
+rect 544 72 549 76
+rect 544 56 549 60
+rect 544 40 549 44
+rect 544 24 549 28
+rect 95 6 99 9
+rect 544 8 549 12
+rect 183 5 187 7
+rect 0 -13 8 0
+rect 69 -4 73 0
+rect 77 -27 81 1
+rect 85 -13 91 2
+rect 271 4 275 7
+rect 359 4 363 7
+rect 447 4 451 7
+rect 100 -10 139 -4
+rect 143 -10 227 -4
+rect 231 -10 315 -4
+rect 319 -10 403 -4
+rect 407 -10 498 -4
+rect 504 -10 549 -4
+rect 91 -15 95 -14
+rect 494 -15 540 -14
+rect 91 -21 540 -15
+rect 95 -63 510 -57
+rect 93 -115 97 -111
+rect 111 -115 115 -111
+rect 127 -115 132 -111
+rect 150 -115 155 -111
+rect 167 -115 171 -111
+rect 183 -115 187 -111
+rect 199 -115 203 -111
+rect 215 -115 220 -111
+rect 238 -115 243 -111
+rect 255 -115 259 -111
+rect 271 -115 275 -111
+rect 287 -115 291 -111
+rect 303 -115 308 -111
+rect 326 -115 331 -111
+rect 343 -115 347 -111
+rect 359 -115 363 -111
+rect 375 -115 379 -111
+rect 391 -115 396 -111
+rect 414 -115 419 -111
+rect 431 -115 435 -111
+rect 447 -115 451 -111
+rect 463 -115 467 -111
+rect 479 -115 484 -111
+rect 93 -117 495 -115
+rect 105 -121 495 -117
+<< m2contact >>
+rect 69 788 73 793
+rect 139 784 143 789
+rect 227 784 231 789
+rect 315 784 319 789
+rect 403 784 407 789
+rect 491 784 495 789
+rect 539 773 548 780
+rect -24 527 -20 531
+rect -16 271 -12 275
+rect -8 15 -4 19
+rect 69 -10 73 -4
+rect 96 -10 100 -4
+rect 139 -10 143 -4
+rect 183 1 187 5
+rect 0 -18 9 -13
+rect 85 -21 91 -13
+rect 227 -10 231 -4
+rect 271 0 275 4
+rect 315 -10 319 -4
+rect 359 0 363 4
+rect 403 -10 407 -4
+rect 447 0 451 4
+rect 498 -10 504 -4
+rect 540 -21 549 -14
+rect 93 -121 105 -117
+rect 495 -121 504 -111
+use pixelmemtile pixelmemtile_2
+timestamp 951255912
+transform 1 0 0 0 1 512
+box 0 -1 546 261
+use pixelmemtile pixelmemtile_1
+timestamp 951255912
+transform 1 0 0 0 1 256
+box 0 -1 546 261
+use pixelmemtile pixelmemtile_0
+timestamp 951255912
+transform 1 0 0 0 1 0
+box 0 -1 546 261
+use 9worddrivers 9worddrivers_0
+timestamp 951572636
+transform 1 0 85 0 1 -117
+box 10 -1 410 107
+<< labels >>
+rlabel metal2 79 -2 79 -2 5 Phi2_b
+rlabel metal1 -1 764 -1 764 8 pixelC_s1[7]
+rlabel metal1 -1 732 -1 732 8 pixelC_s1[6]
+rlabel metal1 -1 700 -1 700 8 pixelC_s1[5]
+rlabel metal1 -1 668 -1 668 8 pixelC_s1[4]
+rlabel metal1 -1 636 -1 636 8 pixelC_s1[3]
+rlabel metal1 -1 604 -1 604 8 pixelC_s1[2]
+rlabel metal1 -1 572 -1 572 8 pixelC_s1[1]
+rlabel metal1 -1 540 -1 540 8 pixelC_s1[0]
+rlabel metal1 -1 508 -1 508 8 pixelB_s1[7]
+rlabel metal1 -1 476 -1 476 8 pixelB_s1[6]
+rlabel metal1 -1 444 -1 444 8 pixelB_s1[5]
+rlabel metal1 -1 412 -1 412 8 pixelB_s1[4]
+rlabel metal1 -1 380 -1 380 8 pixelB_s1[3]
+rlabel metal1 0 348 0 348 8 pixelB_s1[2]
+rlabel metal1 -1 316 -1 316 8 pixelB_s1[1]
+rlabel metal1 0 284 0 284 8 pixelB_s1[0]
+rlabel metal1 -1 252 -1 252 8 pixelA_s1[7]
+rlabel metal1 -1 220 -1 220 8 pixelA_s1[6]
+rlabel metal1 -1 188 -1 188 8 pixelA_s1[5]
+rlabel metal1 -1 156 -1 156 8 pixelA_s1[4]
+rlabel metal1 -1 124 -1 124 8 pixelA_s1[3]
+rlabel metal1 -1 92 -1 92 8 pixelA_s1[2]
+rlabel metal1 -1 60 -1 60 8 pixelA_s1[1]
+rlabel metal1 -1 28 -1 28 8 pixelA_s1[0]
+rlabel metal2 548 763 548 763 2 pixelCout_s1[7]
+rlabel metal2 548 731 548 731 2 pixelCout_s1[6]
+rlabel metal2 548 699 548 699 2 pixelCout_s1[5]
+rlabel metal2 548 667 548 667 2 pixelCout_s1[4]
+rlabel metal2 548 635 548 635 2 pixelCout_s1[3]
+rlabel metal2 548 603 548 603 2 pixelCout_s1[2]
+rlabel metal2 548 571 548 571 2 pixelCout_s1[1]
+rlabel metal2 548 538 548 538 2 pixelCout_s1[0]
+rlabel metal2 548 507 548 507 2 pixelBout_s1[7]
+rlabel metal2 548 475 548 475 2 pixelBout_s1[6]
+rlabel metal2 548 443 548 443 2 pixelBout_s1[5]
+rlabel metal2 548 411 548 411 2 pixelBout_s1[4]
+rlabel metal2 548 379 548 379 2 pixelBout_s1[3]
+rlabel metal2 548 347 548 347 2 pixelBout_s1[2]
+rlabel metal2 548 314 548 314 2 pixelBout_s1[1]
+rlabel metal2 548 283 548 283 2 pixelBout_s1[0]
+rlabel metal2 548 250 548 250 2 pixelAout_s1[7]
+rlabel metal2 548 219 548 219 2 pixelAout_s1[6]
+rlabel metal2 547 187 547 187 2 pixelAout_s1[5]
+rlabel metal2 548 155 548 155 2 pixelAout_s1[4]
+rlabel metal2 548 123 548 123 2 pixelAout_s1[3]
+rlabel metal2 547 91 547 91 2 pixelAout_s1[2]
+rlabel metal2 548 59 548 59 2 pixelAout_s1[1]
+rlabel metal2 548 27 548 27 2 pixelAout_s1[0]
+rlabel metal2 -22 2 -22 2 5 Mem_Pointer_s1[0]
+rlabel metal2 -14 2 -14 2 5 Mem_Pointer_s1[1]
+rlabel metal2 -6 2 -6 2 5 Mem_Pointer_s1[2]
+rlabel metal1 488 -106 488 -105 6 wrapout_s1[0]
+rlabel metal1 410 -106 410 -105 4 wrapout_s1[1]
+rlabel metal1 400 -105 400 -104 6 wrapout_s1[2]
+rlabel metal1 312 -105 312 -104 6 wrapout_s1[4]
+rlabel metal1 322 -106 322 -105 4 wrapout_s1[3]
+rlabel metal1 234 -105 234 -105 4 wrapout_s1[5]
+rlabel metal1 224 -105 224 -105 6 wrapout_s1[6]
+rlabel metal1 146 -105 146 -105 4 wrapout_s1[7]
+rlabel metal1 136 -105 136 -105 6 wrapout_s1[8]
+rlabel metal2 96 -61 96 -61 7 Phi1
+rlabel metal2 89 -2 89 -2 5 Gnd
+rlabel metal2 94 -117 94 -117 7 Vdd
+<< end >>

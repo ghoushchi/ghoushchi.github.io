@@ -1,0 +1,133 @@
+magic
+tech scmos
+timestamp 951727448
+<< pwell >>
+rect 0 0 56 32
+<< nwell >>
+rect 0 56 56 64
+rect -1 38 56 56
+rect 0 32 56 38
+<< polysilicon >>
+rect 11 53 13 55
+rect 19 53 21 55
+rect 27 53 29 55
+rect 35 53 37 55
+rect 11 26 13 41
+rect 19 32 21 41
+rect 27 33 29 41
+rect 15 30 21 32
+rect 15 26 17 30
+rect 28 29 29 33
+rect 35 40 37 41
+rect 46 40 48 42
+rect 35 38 48 40
+rect 19 26 21 28
+rect 23 27 33 29
+rect 23 26 25 27
+rect 31 26 33 27
+rect 35 26 37 38
+rect 39 31 46 32
+rect 39 30 48 31
+rect 39 26 41 30
+rect 43 26 45 28
+rect 11 6 13 18
+rect 15 10 17 18
+rect 19 14 21 18
+rect 23 16 25 18
+rect 31 16 33 18
+rect 35 14 37 18
+rect 19 12 37 14
+rect 39 10 41 18
+rect 15 8 41 10
+rect 43 6 45 18
+rect 11 4 45 6
+<< ndiffusion >>
+rect 10 18 11 26
+rect 13 18 15 26
+rect 17 18 19 26
+rect 21 18 23 26
+rect 25 18 26 26
+rect 30 18 31 26
+rect 33 18 35 26
+rect 37 18 39 26
+rect 41 18 43 26
+rect 45 18 46 26
+<< pdiffusion >>
+rect 10 41 11 53
+rect 13 41 14 53
+rect 18 41 19 53
+rect 21 41 22 53
+rect 26 41 27 53
+rect 29 41 30 53
+rect 34 41 35 53
+rect 37 41 38 53
+<< metal1 >>
+rect 0 56 56 60
+rect 2 53 10 56
+rect 22 53 26 56
+rect 38 53 42 56
+rect 46 46 50 48
+rect 14 38 18 41
+rect 7 33 10 34
+rect 26 34 27 37
+rect 14 24 17 34
+rect 24 33 27 34
+rect 31 26 34 41
+rect 42 35 49 36
+rect 42 33 46 35
+rect 14 21 26 24
+rect 30 23 34 26
+rect 6 8 10 18
+rect 46 8 50 18
+rect 0 4 6 8
+rect 10 4 56 8
+<< ntransistor >>
+rect 11 18 13 26
+rect 15 18 17 26
+rect 19 18 21 26
+rect 23 18 25 26
+rect 31 18 33 26
+rect 35 18 37 26
+rect 39 18 41 26
+rect 43 18 45 26
+<< ptransistor >>
+rect 11 41 13 53
+rect 19 41 21 53
+rect 27 41 29 53
+rect 35 41 37 53
+<< polycontact >>
+rect 46 42 50 46
+rect 7 29 11 33
+rect 24 29 28 33
+rect 46 31 50 35
+<< ndcontact >>
+rect 6 18 10 26
+rect 26 18 30 26
+rect 46 18 50 26
+<< pdcontact >>
+rect 6 41 10 53
+rect 14 41 18 53
+rect 22 41 26 53
+rect 30 41 34 53
+rect 38 41 42 53
+<< m2contact >>
+rect 46 48 50 52
+rect 6 34 10 38
+rect 14 34 18 38
+rect 22 34 26 38
+rect 38 33 42 37
+<< psubstratepcontact >>
+rect 6 4 10 8
+<< nsubstratencontact >>
+rect 2 41 6 53
+<< labels >>
+rlabel m2contact 16 36 16 36 6 Out_b
+rlabel m2contact 24 36 24 36 6 In0
+rlabel m2contact 40 35 40 35 6 In2
+rlabel m2contact 8 36 8 36 6 In3
+rlabel metal1 4 6 4 6 6 GND
+rlabel metal1 52 6 52 6 6 GND
+rlabel metal1 52 58 52 58 6 Vdd
+rlabel metal1 4 58 4 58 6 Vdd
+rlabel m2contact 48 50 48 50 6 In1
+<< end >>

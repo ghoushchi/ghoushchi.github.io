@@ -1,0 +1,44 @@
+magic
+tech scmos
+timestamp 951985653
+<< metal1 >>
+rect 48 -4 51 9
+rect 240 -4 244 8
+<< metal2 >>
+rect 182 437 196 441
+rect 192 433 196 437
+rect 192 429 206 433
+rect 192 411 206 415
+rect 192 407 196 411
+rect 182 403 196 407
+rect 183 317 196 321
+rect 192 313 196 317
+rect 192 309 205 313
+rect 192 291 206 295
+rect 192 287 196 291
+rect 182 283 196 287
+rect 183 197 196 201
+rect 192 193 196 197
+rect 192 189 205 193
+rect 192 171 205 175
+rect 192 167 196 171
+rect 183 163 196 167
+rect 183 77 196 81
+rect 192 73 196 77
+rect 192 69 205 73
+rect 192 51 204 55
+rect 192 47 196 51
+rect 184 43 196 47
+rect 52 -8 240 -4
+<< m2contact >>
+rect 48 -8 52 -4
+rect 240 -8 244 -4
+use 12bitSR 12bitSR_0
+timestamp 951985653
+transform 1 0 0 0 1 0
+box 0 0 189 724
+use 8bitSR 8bitSR_0
+timestamp 951985653
+transform 1 0 186 0 1 0
+box 0 0 189 484
+<< end >>

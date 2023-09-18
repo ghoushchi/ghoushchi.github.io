@@ -1,0 +1,61 @@
+magic
+tech scmos
+timestamp 951112323
+<< metal1 >>
+rect 19 187 22 195
+rect 26 187 29 191
+rect 127 187 130 195
+rect 134 187 137 191
+rect 175 128 180 235
+rect 71 9 78 12
+rect 175 8 180 122
+rect 183 68 188 182
+rect 183 3 188 62
+<< metal2 >>
+rect 20 235 175 240
+rect 17 203 24 207
+rect 125 203 130 207
+rect 35 182 40 187
+rect 175 182 183 187
+rect 11 148 17 152
+rect 12 98 18 102
+rect 175 62 183 68
+rect 12 28 17 32
+rect 36 3 43 8
+<< m2contact >>
+rect 175 235 180 240
+rect 19 195 23 199
+rect 127 195 131 199
+rect 175 122 180 128
+rect 175 3 180 8
+rect 183 182 188 187
+rect 183 62 188 68
+use inverters inverters_1
+timestamp 951078626
+transform 1 0 57 0 1 195
+box -37 -12 2 45
+use inverters inverters_0
+timestamp 951078626
+transform 1 0 165 0 1 195
+box -37 -12 2 45
+use SetCell SetCell_0
+timestamp 951088720
+transform 1 0 28 0 1 126
+box -17 -3 147 61
+use ResetCell ResetCell_0
+timestamp 951088720
+transform 1 0 33 0 -1 114
+box -21 -13 142 51
+use ResetCellflip ResetCellflip_0
+timestamp 951112323
+transform 1 0 3 0 1 -84
+box 9 87 172 151
+<< labels >>
+rlabel metal2 38 184 38 184 5 Vdd
+rlabel metal2 40 5 40 5 1 Gnd
+rlabel metal2 19 205 19 205 1 Phi2
+rlabel metal2 127 205 127 205 1 p3_Phi1_q1
+rlabel metal2 13 150 13 150 3 Mem_Pointer_s1[2]
+rlabel metal2 14 100 14 100 3 Mem_Pointer_s1[1]
+rlabel metal2 13 30 13 30 3 Mem_Pointer_s1[0]
+<< end >>

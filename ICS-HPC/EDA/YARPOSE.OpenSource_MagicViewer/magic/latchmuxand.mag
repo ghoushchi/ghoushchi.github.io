@@ -1,0 +1,42 @@
+magic
+tech scmos
+timestamp 951985653
+<< metal2 >>
+rect -90 127 57 131
+rect 142 127 171 131
+rect -74 115 -70 127
+rect -26 115 -22 127
+rect 22 115 26 127
+rect 33 114 57 118
+rect 33 109 37 114
+rect 167 113 171 127
+rect 167 109 178 113
+rect 6 105 37 109
+rect 54 105 57 109
+rect -46 101 -42 103
+rect -46 97 57 101
+<< m2contact >>
+rect -46 103 -42 107
+rect 2 105 6 109
+rect 50 105 54 109
+use datapathLatch datapathLatch_0
+timestamp 951209823
+transform 1 0 -89 0 1 84
+box -1 0 50 64
+use datapathLatch datapathLatch_1
+timestamp 951209823
+transform 1 0 -41 0 1 84
+box -1 0 50 64
+use datapathLatch datapathLatch_2
+timestamp 951209823
+transform 1 0 7 0 1 84
+box -1 0 50 64
+use 3to1mux 3to1mux_0
+timestamp 951209823
+transform 1 0 71 0 1 84
+box -16 0 74 64
+use and2 and2_0
+timestamp 951209823
+transform 1 0 66 0 1 77
+box 77 7 115 71
+<< end >>

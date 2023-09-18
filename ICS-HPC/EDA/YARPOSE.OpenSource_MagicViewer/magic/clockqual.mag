@@ -1,0 +1,104 @@
+magic
+tech scmos
+timestamp 951296688
+<< nwell >>
+rect 103 -55 154 -16
+<< polysilicon >>
+rect 110 28 125 30
+rect 110 -12 112 28
+rect 123 27 125 28
+rect 127 28 146 30
+rect 127 27 129 28
+rect 123 13 125 15
+rect 127 13 129 15
+rect 135 24 137 26
+rect 117 -7 121 6
+rect 117 -11 122 -7
+rect 135 -8 137 14
+rect 126 -10 137 -8
+rect 114 -16 129 -14
+rect 127 -17 129 -16
+rect 127 -31 129 -29
+rect 127 -35 129 -33
+rect 135 -24 137 -10
+rect 135 -46 137 -44
+rect 127 -48 129 -47
+rect 127 -50 146 -48
+<< ndiffusion >>
+rect 121 15 123 27
+rect 125 15 127 27
+rect 129 15 130 27
+rect 134 14 135 24
+rect 137 14 138 24
+<< pdiffusion >>
+rect 126 -29 127 -17
+rect 129 -29 130 -17
+rect 126 -47 127 -35
+rect 129 -47 130 -35
+rect 134 -44 135 -24
+rect 137 -44 138 -24
+<< metal1 >>
+rect 106 0 109 39
+rect 113 37 116 39
+rect 113 34 121 37
+rect 117 27 121 34
+rect 117 10 121 15
+rect 130 35 139 39
+rect 143 35 144 39
+rect 130 27 134 35
+rect 130 10 134 14
+rect 138 0 142 14
+rect 106 -4 142 0
+rect 110 -50 114 -16
+rect 122 -17 126 -11
+rect 122 -35 126 -29
+rect 138 -24 142 -4
+rect 146 -46 150 26
+rect 130 -51 138 -47
+rect 131 -55 134 -51
+<< metal2 >>
+rect 103 35 144 39
+rect 148 35 154 39
+rect 103 34 154 35
+rect 103 -51 154 -50
+rect 103 -55 134 -51
+rect 138 -55 154 -51
+<< ntransistor >>
+rect 123 15 125 27
+rect 127 15 129 27
+rect 135 14 137 24
+<< ptransistor >>
+rect 127 -29 129 -17
+rect 127 -47 129 -35
+rect 135 -44 137 -24
+<< polycontact >>
+rect 146 26 150 30
+rect 117 6 121 10
+rect 122 -11 126 -7
+rect 110 -16 114 -12
+rect 146 -50 150 -46
+<< ndcontact >>
+rect 117 15 121 27
+rect 130 14 134 27
+rect 138 14 142 24
+<< pdcontact >>
+rect 122 -29 126 -17
+rect 122 -47 126 -35
+rect 130 -47 134 -17
+rect 138 -44 142 -24
+<< m2contact >>
+rect 144 35 148 39
+rect 134 -55 138 -51
+<< psubstratepcontact >>
+rect 139 35 143 39
+rect 130 3 134 10
+<< nsubstratencontact >>
+rect 117 -55 131 -51
+<< labels >>
+rlabel metal2 151 36 151 36 1 Gnd
+rlabel metal2 143 -53 143 -53 5 Vdd
+rlabel metal1 112 -25 112 -25 5 enbl
+rlabel metal1 107 27 107 27 5 phi
+rlabel metal1 148 22 148 22 5 clkin
+rlabel metal1 118 32 118 32 1 phi_b
+<< end >>

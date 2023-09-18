@@ -1,0 +1,49 @@
+magic
+tech scmos
+timestamp 951985653
+<< metal1 >>
+rect 56 52 60 56
+rect 93 41 97 45
+rect 92 38 97 41
+rect 25 25 29 29
+rect 78 15 82 20
+rect 114 16 118 19
+rect 121 15 125 19
+rect 56 8 60 12
+<< metal2 >>
+rect 58 60 63 64
+rect 59 59 63 60
+rect 25 51 63 55
+rect 146 51 181 55
+rect 25 43 63 47
+rect 146 43 195 47
+rect 163 26 167 35
+rect 57 21 63 25
+rect 147 22 167 26
+rect 191 25 195 43
+rect 59 3 63 5
+rect 58 0 63 3
+<< m2contact >>
+rect 53 21 57 25
+rect 191 21 195 25
+use datapathLatch datapathLatch_0
+timestamp 951209823
+transform 1 0 10 0 1 0
+box -1 0 50 64
+use 3to1mux 3to1mux_0
+timestamp 951209823
+transform 1 0 76 0 1 0
+box -16 0 74 64
+use datapathLatch datapathLatch_1
+timestamp 951209823
+transform 1 0 148 0 1 0
+box -1 0 50 64
+<< labels >>
+rlabel metal1 27 27 27 27 2 input
+rlabel metal2 193 28 193 28 7 ouput
+rlabel metal1 116 17 116 17 1 Reset_Shift
+rlabel metal1 123 17 123 17 3 No_Shift
+rlabel metal1 80 18 80 18 1 Shift_Right
+rlabel metal2 60 1 60 1 1 Gnd
+rlabel metal2 59 62 59 62 1 Vdd
+<< end >>

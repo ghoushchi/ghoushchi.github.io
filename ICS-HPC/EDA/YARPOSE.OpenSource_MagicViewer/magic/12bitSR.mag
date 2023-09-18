@@ -1,0 +1,45 @@
+magic
+tech scmos
+timestamp 951985653
+<< metal1 >>
+rect 49 712 58 716
+rect 48 604 51 609
+rect 48 600 58 604
+rect 54 597 58 600
+rect 48 484 51 489
+rect 48 480 58 484
+rect 54 477 58 480
+rect 48 364 51 370
+rect 48 360 58 364
+rect 54 357 58 360
+rect 48 244 51 249
+rect 48 240 58 244
+rect 54 237 58 240
+rect 48 124 51 130
+rect 48 120 58 124
+rect 54 116 58 120
+use SR2tiles SR2tiles_5
+timestamp 951985653
+transform 1 0 0 0 1 600
+box 0 0 189 124
+use SR2tiles SR2tiles_4
+timestamp 951985653
+transform 1 0 0 0 1 480
+box 0 0 189 124
+use SR2tiles SR2tiles_3
+timestamp 951985653
+transform 1 0 0 0 1 360
+box 0 0 189 124
+use SR2tiles SR2tiles_2
+timestamp 951985653
+transform 1 0 0 0 1 240
+box 0 0 189 124
+use SR2tiles SR2tiles_1
+timestamp 951985653
+transform 1 0 0 0 1 120
+box 0 0 189 124
+use SR2tiles SR2tiles_0
+timestamp 951985653
+transform 1 0 0 0 1 0
+box 0 0 189 124
+<< end >>
