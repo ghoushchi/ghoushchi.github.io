@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html><!-- InstanceBegin template="/Templates/LPSA.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<link href="./css/LinePhysSystAnal.css" rel="stylesheet" type="text/css">
+<link href="mailto:echeeve1@swarthmore.edu" rev="made">
+<meta content="en-us" http-equiv="Content-Language">
+<meta content="text/html; charset=windows-1252" http-equiv="Content-Type">
+<meta content="Erik Cheever, Swarthmore College" name="author">
+<meta content="ALL" name="ROBOTS">
+<script src="./js/Overlib/overlib.js"><!-- overLIB (c) Erik Bosrup --></script>
+<script type="text/x-mathjax-config">
+       MathJax.Hub.Config({  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+   
+    </script>
+<!-- "{% static './js/MathJax-2.7.1/MathJax.js?config=TeX-MML-AM_CHTML'%}"> -->	
+<script type="text/javascript" async
+  src="./js/MathJax-2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script
+  src="./js/jquery/jquery-3.3.1.min.js"
+  integrity=""
+  crossorigin="anonymous"></script>
+<script src="./js/jquery/jquery-toc.js"></script>
+<!-- InstanceBeginEditable name="doctitle" -->
+    <meta content="csv" name="keywords">
+    <meta content="csv" name="description">
+    <title>Convolution Interactive Visualization</title>
+    <script src="./js/highcharts/highcharts.js"></script>
+	<script src="./js/highcharts/modules/exporting.js"></script>
+    <script src="./js/CI.js"></script>
+    <!-- InstanceEndEditable -->
+<script src="./js/LPSA.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <ul id="NavHeader">
+        <li id="current"><a href="https://lpsa.swarthmore.edu/Convolution/CI.html">Convolution Interactive Visualization</a></li>
+        <li id="current"><a href="help.html">Interactive Help and Guide</a></li>
+		
+    </ul>
+       <table align="center">
+            <tbody>
+                <tr>
+                    <td align="right"><div id="timePlot" style="width:500px; height:300px;float:right; "></div> </td>
+                    <td><div id="lambdaPlot" style="width:500px; height:300px;float:right;clear:right; "></div></td>
+                </tr>
+                <tr>
+                    <td align="right">
+					    <form id="funcsDropDown">
+        <table border="0" align="center">
+            <tbody>
+                <tr>
+                    <td align="right">Select <font color="#FF0000"">  h(t)</font>: &nbsp; </td>
+                    <td><select id="h_of_t_dd" onchange="staticCalcs();"></select></td>
+                </tr>
+                <tr>
+                    <td align="right">Select <font color="#72B2F2">f(t)</font>: &nbsp;</td>
+                    <td><select id="f_of_t_dd" onchange="staticCalcs();"></select></td>
+                </tr>
+                <tr>
+                    <td align="right">Show complete solution? &nbsp; </td>
+                    <td><input type="checkbox" id="showSoln" checked onchange="dynamicCalcs();"></td>
+            </tbody>
+        </table>
+    </form>
+	    <div id="timeCtrl" style="text-align:center;"></div>
+    <p class="noindent"> The value of the convolution at this time is <font color="#008000"> y(<span id="y_t0Text" )></span>) = <span id="dispConvValue"> </font></span>.
+    <br />
+
+    <div style="color:red; font-weight:200; font-size:larger; display:none;" id="bothImpulseFuncs"></div>
+    <p class="noindent">The functions used for the current example are <sup><a href="#mynote">[*]</a></sup>: </p>
+    <p class="equation"><font color="#FF0000"> h(t)</font>=<span id="h_of_t_text" class="greek"></span> &nbsp;&nbsp;&nbsp;&nbsp; <font color="#72B2F2">f(t)</font>=
+        <span id="f_of_t_text" class="greek"></span>.
+    </p>
+<p class="equation">
+        \[y(t)=\int_{-\infty}^{+\infty}{h(t-\lambda)\cdot f(\lambda)\cdot d\lambda}=\int_{0^-}^t{h(t-\lambda)\cdot f(\lambda)\cdot d\lambda}\]
+        <br></p>	
+					</td>
+                    <td><div id="convPlot" style="width:500px; height:300px;float:right;clear:right; "></div></td>
+                </tr>
+            </tbody>
+        </table>
+<!-- InstanceBeginEditable name="MainText" -->
+    <!-- InstanceEndEditable -->
+<hr class="fullWidth">
+<p id="mynote" class="noindent">[*] <span class="note">Note: All functions are implicitly multiplied by the unit step function, <span class="greek">&gamma;</span>(t), so they are equal to 0 for t&lt;0</span>.
+<br>&copy; Copyright 2005 to 2022 <a href="http://www.swarthmore.edu/NatSci/echeeve1">Erik Cheever</a>.&nbsp;This is a recap (w/permission) by <a href="https://www.linkedin.com/in/ghaznavi-ghoushchi">M. B. Ghaznavi-Ghoushchi</a> 2024. This page may be freely used for educational purposes.
+  Ref: <a href="https://lpsa.swarthmore.edu/Convolution/CI.html">Convolution Visualization</a> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</body>
+<!-- InstanceEnd -->
+</html>

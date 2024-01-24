@@ -1,0 +1,74 @@
+table.skinnyTable  {
+	border-collapse: collapse;
+	border: 1px solid gray;
+	margin:auto;
+	}
+table.skinnyTable td{
+	border: 1px solid gray;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.mediumTable {
+	text-align: center;
+	border: none;
+}
+table.mediumTable {
+	border: 1px solid gray;
+	border-collapse: collapse;
+	empty-cells: show;
+	table-layout: auto;
+	text-align: center;
+	vertical-align: middle;
+	margin: auto;
+}
+table.mediumTable td{
+	border: 1px solid;
+	text-align: center;
+	vertical-align: middle;
+	width:auto;
+}
+div.mediumTable {
+	text-align: center;
+	border: none;
+}
+
+.pageTable {
+	border: 1px gray inset;
+	border-collapse: separate;
+	empty-cells: show;
+	table-layout: auto;
+	vertical-align: middle;
+	margin: auto;
+	font-size: x-small;
+}
+table.pageTable {
+	border: 4px gray ridge;
+	border-collapse: collapse;
+	empty-cells: show;
+	table-layout: auto;
+	text-align: center;
+	vertical-align: middle;
+	text-align: center;
+	vertical-align: middle;
+	font-size: inherit;
+	margin: auto;
+}
+table.pageTable td {
+	border: 1px gray solid;
+	text-align: center;
+	vertical-align: middle;
+	font-size: inherit;
+	empty-cells: show;
+}
+
+div.pageTable {
+	text-align: center;
+	border: none;
+	font-size: inherit;
+}
+
+table.center {
+	margin-left:auto;
+	margin-right:auto;
+}

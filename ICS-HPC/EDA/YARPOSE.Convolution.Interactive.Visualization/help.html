@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Transcript in an external container</title>
+<link rel="stylesheet" href="./build/demos.css" type="text/css">
+
+<!-- Dependencies -->
+<script src="./ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+<script src="./npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+
+<!-- Able Player CSS -->
+<link rel="stylesheet" href="./build/ableplayer.min.css" type="text/css"/>
+
+<!-- Able Player JavaScript -->
+<script src="../build/ableplayer.js"></script>
+
+<!-- Style for this example only -->
+<style>
+	div#wrapper {
+		display: flex; 
+		flex-direction: row; 
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		width: 1280px;
+		max-width: 98%;
+	}
+	#player {
+		width: 480px;
+		margin: 0 20px;
+	}
+	#transcript {
+		height: 700px;
+		width: 500px;
+		margin: 1em;
+	}
+	#transcript div.able-desc {
+		width: 90%;
+	}
+</style>
+
+<link href="./css/LinePhysSystAnal.css" rel="stylesheet" type="text/css">
+<link href="mailto:echeeve1@swarthmore.edu" rev="made">
+<meta content="en-us" http-equiv="Content-Language">
+<meta content="text/html; charset=windows-1252" http-equiv="Content-Type">
+<meta content="Erik Cheever, Swarthmore College" name="author">
+<meta content="ALL" name="ROBOTS">
+<script src="./js/Overlib/overlib.js"><!-- overLIB (c) Erik Bosrup --></script>
+<script type="text/x-mathjax-config">
+       MathJax.Hub.Config({  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+   
+    </script>
+<!-- "{% static './js/MathJax-2.7.1/MathJax.js?config=TeX-MML-AM_CHTML'%}"> -->	
+<script type="text/javascript" async
+  src="./js/MathJax-2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script
+  src="./js/jquery/jquery-3.3.1.min.js"
+  integrity=""
+  crossorigin="anonymous"></script>
+<script src="./js/jquery/jquery-toc.js"></script>
+<!-- InstanceBeginEditable name="doctitle" -->
+    <meta content="csv" name="keywords">
+    <meta content="csv" name="description">
+    <title>Convolution Interactive Visualization</title>
+    <script src="./js/highcharts/highcharts.js"></script>
+	<script src="./js/highcharts/modules/exporting.js"></script>
+    <script src="./js/CI.js"></script>
+    <!-- InstanceEndEditable -->
+<script src="./js/LPSA.js" type="text/javascript"></script>
+</head>
+
+</head>
+
+<body size=80%>
+    <ul id="NavHeader">
+        <li id="current"><a href="index.html">Convolution Interactive Visualization</a></li>
+        <li id="current"><a href="help.html">Interactive Help and Guide</a></li>
+		
+    </ul>
+	<main>
+		<h1>Interactive Help and Guide</h1>
+
+		<p>Convolution Interactive Visualization: Double click on each time point of video or any place of text box!! to start or restart from that moment.</p>
+
+		<div id="wrapper">
+
+			<div id="player">
+				<video id="video1" preload="auto" width="480" height="360" poster="./media/convolution.jpg" data-able-player data-skin="2020" data-transcript-div="transcript" playsinline>
+					<source type="audio/mpeg" src="./media/convolution.mp4"/>
+					<source type="audio/ogg" src="./media/convolution.ogg"/>
+					<track kind="captions" src="./media/convolution_captions_en.vtt" srclang="en" label="English" default/>
+					<track kind="descriptions" src="./media/convolution_description_en.vtt" srclang="en"/>
+					<track kind="chapters" src="./media/convolution_chapters_en.vtt" srclang="en"/>
+
+				</video>
+			</div>
+			<div id="transcript"></div>
+		</div>
+	</main>
+
+</main>
+<!-- InstanceBeginEditable name="MainText" -->
+    <!-- InstanceEndEditable -->
+<hr class="fullWidth">
+<p id="mynote" class="noindent">[*] <span class="note">Note: All functions are implicitly multiplied by the unit step function, <span class="greek">&gamma;</span>(t), so they are equal to 0 for t&lt;0</span>.
+<br>&copy; Copyright 2005 to 2022 <a href="http://www.swarthmore.edu/NatSci/echeeve1">Erik Cheever</a>.&nbsp;This is a recap (w/permission) by <a href="https://www.linkedin.com/in/ghaznavi-ghoushchi">M. B. Ghaznavi-Ghoushchi</a> 2024. This page may be freely used for educational purposes.
+  Ref: <a href="https://lpsa.swarthmore.edu/Convolution/CI.html">Convolution Visualization</a> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</body>
+<!-- InstanceEnd -->
+</html>
