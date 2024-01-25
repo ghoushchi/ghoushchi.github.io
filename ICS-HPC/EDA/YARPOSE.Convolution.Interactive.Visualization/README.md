@@ -21,7 +21,6 @@ Go to the following link and use the online version hosted on `github.io`.
 ## 1. Download or clone the code
 ```console
 caduser@ubuntu:~$ git clone https://github.com/yarpose/YARPOSE.Convolution.Interactive.Visualization
-caduser@ubuntu:~$ cd yarpose
 caduser@ubuntu:~$ cd YARPOSE.Convolution.Interactive.Visualization
 caduser@ubuntu:~$ python -m http.server
 ```
